@@ -9,7 +9,7 @@ import {
  */
 const ErrorAlert = (
   title = 'Error',
-  message = 'Something Went Wrong. Please try Again Later',
+  message = 'Something went wrong. Please try again later',
 ) => {
   Alert.alert(
     title,
