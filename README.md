@@ -43,4 +43,4 @@ Dependencies have been installed correctly if you get this after running the abo
 ## Other useful commands
 * `npm run docs` - generates documentation
 * `npm run lint` - runs linter (eslint)
-* `npm run lint-test` runs eslint and jest simultaneously
+* `npm run lint-test` - runs eslint and jest simultaneously
