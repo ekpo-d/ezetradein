@@ -38,7 +38,7 @@ Create a folder called `env` in the project root and add the project's environme
 npm start # For development, starts up expo, eslint and jest.
 ```
 
-Dependencies have been installed correctly if you get this after running the above: `Your app is running at...`
+Dependencies have been installed correctly if you get this after running the above: `To run the app with live reloading, choose one of...`
 
 ## Other useful commands
 * `npm run docs` - generates documentation
