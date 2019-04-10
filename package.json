@@ -5,9 +5,9 @@
   },
   "scripts": {
     "watch": "npm-watch docs",
-    "start": "npm-run-all --parallel watch lint-test start-dev",
-    "android": "npm-run-all --parallel watch lint-test android-dev",
-    "ios": "npm-run-all --parallel watch lint-test ios-dev",
+    "start": "npm-run-all --parallel lint-test start-dev",
+    "android": "npm-run-all --parallel lint-test android-dev",
+    "ios": "npm-run-all --parallel lint-test ios-dev",
     "start-dev": "node ./node_modules/.bin/expo start",
     "android-dev": "node ./node_modules/.bin/expo start --android",
     "ios-dev": "node ./node_modules/.bin/expo start --ios",
