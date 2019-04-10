@@ -30,6 +30,12 @@ import restaurantStyles from '../../assets/styles/components/restaurant';
 const LATITUDE_DELTA = 0.15;
 const LONGITUDE_DELTA = 0.15;
 
+/**
+ * Single restaurant view,
+ * handles map view (loacation and direction),
+ * link to tel, and website.
+ * @type {Component}
+ */
 export default class RestaurantScreen extends React.Component {
   static navigationOptions = {
     header: null,

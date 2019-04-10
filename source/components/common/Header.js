@@ -17,6 +17,10 @@ import headerStyles from '../../assets/styles/components/header';
 import globalStyles from '../../assets/styles/base/global';
 import ReactiveTextField from './ReactiveTextField';
 
+/**
+ * Header component which handles search functionality
+ * @type {Component}
+ */
 const Header = () => (
   <SafeAreaView style={headerStyles.container}>
     <View style={[globalStyles.row, globalStyles.m_t_sm, globalStyles.m_b_xs]}>

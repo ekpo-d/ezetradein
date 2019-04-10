@@ -16,6 +16,10 @@ import placeholders from '../../assets/styles/base/placeholders';
 import globalStyles from '../../assets/styles/base/global';
 import restaurantStyles from '../../assets/styles/components/restaurant';
 
+/**
+ * Displays individual restaurant tiles within the restarant list component.
+ * @type {Component}
+ */
 const RestaurantItem = props => (
   <View style={restaurantStyles.card}>
     <ImageBackground

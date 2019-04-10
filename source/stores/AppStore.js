@@ -11,13 +11,13 @@ configure({ computedRequiresReaction: 'strict' });
  */
 export default class AppStore {
 	/**
-	 * name - Dummy Varaible
-	 * @var
+	 * Dummy Varaible
+	 * @type {string}
 	 */
 	@observable name = 'AppStore';
 
 	/**
-	 * setClassProps - Used to assign values to the members of
+	 * Function used to assign values to the members of
 	 *  this class from an external function or a react component.
 	 * @param {Array} arr - An array key:value pairs of class members and their values
 	 * @param {Object} self - Refers to the class itself or a member which is a member.

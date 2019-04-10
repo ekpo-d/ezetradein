@@ -13,14 +13,29 @@ import { renderIf } from &apos;../../utils/helpers&apos;;
 import restaurantStyles from &apos;../../assets/styles/components/restaurant&apos;;
 import LoadingScreen from &apos;../common/LoadingScreen&apos;;
 
+/**
+ * RestaurantListScreen displays an infinite list of restaurants,
+ * based on scroll position, loading animation in the absense of data,
+ * and loaction search functionality
+ * @type {Component}
+ */
 @inject(&apos;RestaurantStore&apos;)
 @observer
-export default class RestaurantScreen extends React.Component {
+export default class RestaurantListScreen extends React.Component {
+  /**
+   * Gets the list of restaurants on load
+   * @constructor
+   * @param {Object} props
+   */
 	constructor(props) {
     super(props);
     props.RestaurantStore.getRestaurants();
   }
 
+  /**
+   * Renders individual restaurant tiles
+   * @param {Object} props
+   */
   renderItems = props =&gt; (
     &lt;TouchableOpacity
       key={props.item.id}
@@ -71,7 +86,7 @@ export default class RestaurantScreen extends React.Component {
 <li class="nav-item js_navItem _" data-ice="doc"><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-LoadingScreen">LoadingScreen</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-SourceSansProText">SourceSansProText</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><a class="nav-link js_dirPath _" data-ice="dirPath" href="identifiers.html#components-error">components/error</a><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/components/error/ErrorBoundary.js~ErrorBoundary.html">ErrorBoundary</a></span></span></div></li>
-<li class="nav-item js_navItem _" data-ice="doc"><a class="nav-link js_dirPath _" data-ice="dirPath" href="identifiers.html#components-restaurant">components/restaurant</a><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/components/restaurant/RestaurantListScreen.js~RestaurantScreen.html">RestaurantScreen</a></span></span></div></li>
+<li class="nav-item js_navItem _" data-ice="doc"><a class="nav-link js_dirPath _" data-ice="dirPath" href="identifiers.html#components-restaurant">components/restaurant</a><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen.html">RestaurantListScreen</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/components/restaurant/RestaurantScreen.js~RestaurantScreen.html">RestaurantScreen</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-RestaurantItem">RestaurantItem</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><a class="nav-link js_dirPath _" data-ice="dirPath" href="identifiers.html#stores">stores</a><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/stores/AppStore.js~AppStore.html">AppStore</a></span></span></div></li>

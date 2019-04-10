@@ -13,14 +13,29 @@ import { renderIf } from '../../utils/helpers';
 import restaurantStyles from '../../assets/styles/components/restaurant';
 import LoadingScreen from '../common/LoadingScreen';
 
+/**
+ * RestaurantListScreen displays an infinite list of restaurants,
+ * based on scroll position, loading animation in the absense of data,
+ * and loaction search functionality
+ * @type {Component}
+ */
 @inject('RestaurantStore')
 @observer
-export default class RestaurantScreen extends React.Component {
+export default class RestaurantListScreen extends React.Component {
+  /**
+   * Gets the list of restaurants on load
+   * @constructor
+   * @param {Object} props
+   */
 	constructor(props) {
     super(props);
     props.RestaurantStore.getRestaurants();
   }
 
+  /**
+   * Renders individual restaurant tiles
+   * @param {Object} props
+   */
   renderItems = props => (
     <TouchableOpacity
       key={props.item.id}

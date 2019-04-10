@@ -1,91 +1,75 @@
 {
-  "coverage": "12%",
-  "expectCount": 50,
-  "actualCount": 6,
+  "coverage": "73.46%",
+  "expectCount": 49,
+  "actualCount": 36,
   "files": {
     "source/components/app/AppContainer.js": {
       "expectCount": 2,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        7,
-        22
+        11
       ]
     },
     "source/components/common/ErrorAlert.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "source/components/common/Header.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        20
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "source/components/common/LoadingScreen.js": {
       "expectCount": 3,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
         10,
-        11,
-        13
+        11
       ]
     },
     "source/components/common/ReactiveTextField.js": {
       "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        13,
-        14
-      ]
-    },
-    "source/components/common/StyledText.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
-    },
-    "source/components/error/ErrorBoundary.js": {
-      "expectCount": 5,
-      "actualCount": 0,
-      "undocumentLines": [
-        7,
-        8,
-        10,
-        15,
-        21
-      ]
-    },
-    "source/components/restaurant/RestaurantListItem.js": {
-      "expectCount": 1,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
         19
       ]
     },
+    "source/components/common/StyledText.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "source/components/error/ErrorBoundary.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        15,
+        20,
+        26
+      ]
+    },
+    "source/components/restaurant/RestaurantListItem.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
     "source/components/restaurant/RestaurantListScreen.js": {
       "expectCount": 4,
-      "actualCount": 0,
+      "actualCount": 3,
       "undocumentLines": [
-        18,
-        19,
-        24,
-        33
+        48
       ]
     },
     "source/components/restaurant/RestaurantScreen.js": {
       "expectCount": 5,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
         30,
         31,
-        33,
-        34,
-        38
+        40,
+        44
       ]
     },
     "source/stores/AppStore.js": {
@@ -95,29 +79,13 @@
     },
     "source/stores/RestaurantStore.js": {
       "expectCount": 10,
-      "actualCount": 0,
-      "undocumentLines": [
-        8,
-        9,
-        11,
-        13,
-        15,
-        17,
-        19,
-        22,
-        25,
-        37
-      ]
+      "actualCount": 10,
+      "undocumentLines": []
     },
     "source/stores/UIStore.js": {
-      "expectCount": 4,
-      "actualCount": 0,
-      "undocumentLines": [
-        4,
-        5,
-        7,
-        13
-      ]
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
     },
     "source/stores/index.js": {
       "expectCount": 3,
@@ -126,14 +94,8 @@
     },
     "source/utils/helpers.js": {
       "expectCount": 5,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        9,
-        15,
-        21,
-        28
-      ]
+      "actualCount": 5,
+      "undocumentLines": []
     }
   }
 }

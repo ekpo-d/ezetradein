@@ -5,22 +5,64 @@ import {
 	getData,
 } from &apos;../utils/helpers&apos;;
 
+/**
+ * MobX store class.
+ * For restaurant component and related actions.
+ * @class
+ */
 export default class RestaurantStore {
+	/**
+	 * This holds a reference to the searchbar component.
+	 * @type {Object}
+	 */
 	searchbarRef = &apos;&apos;;
 
+	/**
+	 * This controls the display of the loading animation in the restaurant list component.
+	 * @type {Boolean}
+	 */
 	@observable loading = false;
 
+	/**
+	 * This controls the refreshing indicator on pull down in the restaurant list component
+	 * @type {Boolean}
+	 */
 	@observable refreshing = false;
 
+	/**
+	 * This is an array of objects containing individual restaurant data.
+	 * @type {Array}
+	 */
 	@observable restaurants = [];
 
+	/**
+	 * This switch shows and hides the searchbar.
+	 * @type {Boolean}
+	 */
 	@observable showSearchbar = false;
 
+	/**
+	 * This holds the location search query string.
+	 * @type {Boolean}
+	 */
 	@observable searchString = &apos;&apos;;
 
+	/**
+	 * Function used to assign values to the members of
+	 * this class from an external function or a react component.
+	 * @param {Array} arr - An array key:value pairs of class members and their values
+	 * @param {Object} self - Refers to the class itself or a member which is a member.
+	 */
 	@action
 	setClassProps = (arr, self = this) =&gt; setClassProps(arr, self);
 
+	/**
+	 * Function used to both get the array of restaurants on initial load,
+	 * refresh the list on pull to refresh,
+	 * and get new restaurants based on search query.
+	 * @param {string} load - load type, either load or refresh.
+	 * @param {string} location - location parameter.
+	 */
 	@action
 	getRestaurants = (type = &apos;load&apos;, location = &apos;NYC&apos;) =&gt; {
 		if (type === &apos;load&apos;) this.loading = true;
@@ -33,6 +75,10 @@ export default class RestaurantStore {
 			});
 	};
 
+	/**
+	 * Function used during infinite scrolling.
+	 * It&apos;s triggered when the scroll has reached the specified threshold.
+	 */
 	@action
 	onEndReached = () =&gt; {
 		const offset = toJS(this.restaurants).length;
@@ -54,7 +100,7 @@ export default class RestaurantStore {
 <li class="nav-item js_navItem _" data-ice="doc"><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-LoadingScreen">LoadingScreen</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-SourceSansProText">SourceSansProText</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><a class="nav-link js_dirPath _" data-ice="dirPath" href="identifiers.html#components-error">components/error</a><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/components/error/ErrorBoundary.js~ErrorBoundary.html">ErrorBoundary</a></span></span></div></li>
-<li class="nav-item js_navItem _" data-ice="doc"><a class="nav-link js_dirPath _" data-ice="dirPath" href="identifiers.html#components-restaurant">components/restaurant</a><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/components/restaurant/RestaurantListScreen.js~RestaurantScreen.html">RestaurantScreen</a></span></span></div></li>
+<li class="nav-item js_navItem _" data-ice="doc"><a class="nav-link js_dirPath _" data-ice="dirPath" href="identifiers.html#components-restaurant">components/restaurant</a><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen.html">RestaurantListScreen</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/components/restaurant/RestaurantScreen.js~RestaurantScreen.html">RestaurantScreen</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-RestaurantItem">RestaurantItem</a></span></span></div></li>
 <li class="nav-item js_navItem _" data-ice="doc"><a class="nav-link js_dirPath _" data-ice="dirPath" href="identifiers.html#stores">stores</a><div class="hidden fake-nav-link js_fakeLink _"><span class="kind _kind-class" data-ice="kind">C</span> <span class="name _" data-ice="name"><span><a href="class/source/stores/AppStore.js~AppStore.html">AppStore</a></span></span></div></li>

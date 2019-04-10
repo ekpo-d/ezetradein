@@ -1,3 +1,7 @@
+/**
+ * General app routing and custom component headers
+ */
+
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import RestaurantListScreen from '../restaurant/RestaurantListScreen';
@@ -19,6 +23,11 @@ const AppNavigator = createStackNavigator(
   },
 );
 
+/**
+ * Container responsible for managing the app
+ * state and linking top-level navigator to the app environment.
+ * @type {Component}
+ */
 const AppContainer = createAppContainer(AppNavigator);
 
 export default AppContainer;

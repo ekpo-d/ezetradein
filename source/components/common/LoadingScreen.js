@@ -10,6 +10,11 @@ import globalStyles from '../../assets/styles/base/global';
 const { width } = Dimensions.get('window');
 const blockWidth = width - 30;
 
+/**
+ * Loading tiles component which shows in the
+ * restaurants list till actual data is received.
+ * @type {Component}
+ */
 const LoadingScreen = () => (
   <View>
     <View style={globalStyles.m_b_sm}>

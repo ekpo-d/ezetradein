@@ -633,7 +633,7 @@
     "__docId__": 54,
     "kind": "file",
     "name": "source/components/app/AppContainer.js",
-    "content": "import { createAppContainer, createStackNavigator } from 'react-navigation';\n\nimport RestaurantListScreen from '../restaurant/RestaurantListScreen';\nimport RestaurantScreen from '../restaurant/RestaurantScreen';\nimport Header from '../common/Header';\n\nconst AppNavigator = createStackNavigator(\n  {\n    RestaurantList: {\n      screen: RestaurantListScreen,\n      navigationOptions: () => ({\n        header: Header,\n      }),\n    },\n    Restaurant: RestaurantScreen,\n  },\n  {\n    initialRouteName: 'RestaurantList',\n  },\n);\n\nconst AppContainer = createAppContainer(AppNavigator);\n\nexport default AppContainer;\n",
+    "content": "/**\n * General app routing and custom component headers\n */\n\nimport { createAppContainer, createStackNavigator } from 'react-navigation';\n\nimport RestaurantListScreen from '../restaurant/RestaurantListScreen';\nimport RestaurantScreen from '../restaurant/RestaurantScreen';\nimport Header from '../common/Header';\n\nconst AppNavigator = createStackNavigator(\n  {\n    RestaurantList: {\n      screen: RestaurantListScreen,\n      navigationOptions: () => ({\n        header: Header,\n      }),\n    },\n    Restaurant: RestaurantScreen,\n  },\n  {\n    initialRouteName: 'RestaurantList',\n  },\n);\n\n/**\n * Container responsible for managing the app\n * state and linking top-level navigator to the app environment.\n * @type {Component}\n */\nconst AppContainer = createAppContainer(AppNavigator);\n\nexport default AppContainer;\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/app/AppContainer.js",
     "access": "public",
@@ -652,7 +652,7 @@
     "importPath": "./source/components/app/AppContainer.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 7,
+    "lineNumber": 11,
     "undocument": true,
     "type": {
       "types": [
@@ -672,20 +672,22 @@
     "export": true,
     "importPath": "./source/components/app/AppContainer.js",
     "importStyle": "AppContainer",
-    "description": null,
-    "lineNumber": 22,
-    "undocument": true,
+    "description": "Container responsible for managing the app\nstate and linking top-level navigator to the app environment.",
+    "lineNumber": 31,
     "type": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Component"
+      ],
+      "spread": false,
+      "description": null
     }
   },
   {
     "__docId__": 57,
     "kind": "file",
     "name": "source/components/common/ErrorAlert.js",
-    "content": "import {\n  Alert,\n} from 'react-native';\n\nconst ErrorAlert = (\n  title = 'Error',\n  message = 'Something Went Wrong. Please try Again Later',\n) => {\n  Alert.alert(\n    title,\n    message,\n    [{ text: 'OK' }],\n    { cancelable: false },\n  );\n};\n\nexport default ErrorAlert;\n",
+    "content": "import {\n  Alert,\n} from 'react-native';\n\n/**\n * Function for displaying error alerts\n * @param {string} title - title of the error\n * @param {string} message - error message\n */\nconst ErrorAlert = (\n  title = 'Error',\n  message = 'Something Went Wrong. Please try Again Later',\n) => {\n  Alert.alert(\n    title,\n    message,\n    [{ text: 'OK' }],\n    { cancelable: false },\n  );\n};\n\nexport default ErrorAlert;\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/ErrorAlert.js",
     "access": "public",
@@ -705,27 +707,28 @@
     "export": true,
     "importPath": "./source/components/common/ErrorAlert.js",
     "importStyle": "ErrorAlert",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
+    "description": "Function for displaying error alerts",
+    "lineNumber": 10,
     "params": [
       {
-        "name": "title",
-        "optional": true,
+        "nullable": null,
         "types": [
           "string"
         ],
-        "defaultRaw": "Error",
-        "defaultValue": "Error"
+        "spread": false,
+        "optional": false,
+        "name": "title",
+        "description": "title of the error"
       },
       {
-        "name": "message",
-        "optional": true,
+        "nullable": null,
         "types": [
           "string"
         ],
-        "defaultRaw": "Something Went Wrong. Please try Again Later",
-        "defaultValue": "Something Went Wrong. Please try Again Later"
+        "spread": false,
+        "optional": false,
+        "name": "message",
+        "description": "error message"
       }
     ],
     "return": null
@@ -734,7 +737,7 @@
     "__docId__": 59,
     "kind": "file",
     "name": "source/components/common/Header.js",
-    "content": "import React from 'react';\nimport {\n  SafeAreaView,\n  View,\n  Image,\n  TouchableOpacity,\n} from 'react-native';\nimport { toJS } from 'mobx';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport { Ionicons } from '@expo/vector-icons';\n\nimport Stores from '../../stores/index';\nimport SourceSansProText from './StyledText';\n\nimport headerStyles from '../../assets/styles/components/header';\nimport globalStyles from '../../assets/styles/base/global';\nimport ReactiveTextField from './ReactiveTextField';\n\nconst Header = () => (\n  <SafeAreaView style={headerStyles.container}>\n    <View style={[globalStyles.row, globalStyles.m_t_sm, globalStyles.m_b_xs]}>\n      <View style={globalStyles.col_1}>\n        <Ionicons\n          name=\"md-arrow-back\"\n          size={30}\n          color=\"white\"\n        />\n      </View>\n      <View style={globalStyles.col_6}>\n        <ReactiveTextField />\n      </View>\n      <View style={[globalStyles.col_3, { flexDirection: 'row-reverse' }]}>\n        <Image\n          source={require('../../assets/images/icons/settings.png')}\n          resizeMode=\"contain\"\n          style={headerStyles.icon}\n        />\n        <TouchableOpacity\n          onPress={() => {\n            if (Stores.RestaurantStore.searchString.trim().length) {\n              Stores.RestaurantStore.getRestaurants(\n                'load',\n                toJS(Stores.RestaurantStore.searchString),\n              );\n            }\n            else {\n              Stores.RestaurantStore.setClassProps([\n                {\n                  name: 'showSearchbar',\n                  value: !Stores.RestaurantStore.showSearchbar,\n                },\n              ]);\n              // eslint-disable-next-line no-unused-expressions\n              Stores.RestaurantStore.showSearchbar\n              ? Stores.RestaurantStore.searchbarRef.focus()\n              : null;\n            }\n          }}\n        >\n          <Ionicons\n            name=\"md-search\"\n            size={30}\n            color=\"white\"\n            style={{ marginRight: 30 }}\n          />\n        </TouchableOpacity>\n      </View>\n    </View>\n    <View style={globalStyles.m_b_xs}>\n      <SourceSansProText type=\"SourceSansProBold\" style={headerStyles.headerText}>\n        Restaurants\n      </SourceSansProText>\n    </View>\n  </SafeAreaView>\n);\n\nexport default Header;\n",
+    "content": "import React from 'react';\nimport {\n  SafeAreaView,\n  View,\n  Image,\n  TouchableOpacity,\n} from 'react-native';\nimport { toJS } from 'mobx';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport { Ionicons } from '@expo/vector-icons';\n\nimport Stores from '../../stores/index';\nimport SourceSansProText from './StyledText';\n\nimport headerStyles from '../../assets/styles/components/header';\nimport globalStyles from '../../assets/styles/base/global';\nimport ReactiveTextField from './ReactiveTextField';\n\n/**\n * Header component which handles search functionality\n * @type {Component}\n */\nconst Header = () => (\n  <SafeAreaView style={headerStyles.container}>\n    <View style={[globalStyles.row, globalStyles.m_t_sm, globalStyles.m_b_xs]}>\n      <View style={globalStyles.col_1}>\n        <Ionicons\n          name=\"md-arrow-back\"\n          size={30}\n          color=\"white\"\n        />\n      </View>\n      <View style={globalStyles.col_6}>\n        <ReactiveTextField />\n      </View>\n      <View style={[globalStyles.col_3, { flexDirection: 'row-reverse' }]}>\n        <Image\n          source={require('../../assets/images/icons/settings.png')}\n          resizeMode=\"contain\"\n          style={headerStyles.icon}\n        />\n        <TouchableOpacity\n          onPress={() => {\n            if (Stores.RestaurantStore.searchString.trim().length) {\n              Stores.RestaurantStore.getRestaurants(\n                'load',\n                toJS(Stores.RestaurantStore.searchString),\n              );\n            }\n            else {\n              Stores.RestaurantStore.setClassProps([\n                {\n                  name: 'showSearchbar',\n                  value: !Stores.RestaurantStore.showSearchbar,\n                },\n              ]);\n              // eslint-disable-next-line no-unused-expressions\n              Stores.RestaurantStore.showSearchbar\n              ? Stores.RestaurantStore.searchbarRef.focus()\n              : null;\n            }\n          }}\n        >\n          <Ionicons\n            name=\"md-search\"\n            size={30}\n            color=\"white\"\n            style={{ marginRight: 30 }}\n          />\n        </TouchableOpacity>\n      </View>\n    </View>\n    <View style={globalStyles.m_b_xs}>\n      <SourceSansProText type=\"SourceSansProBold\" style={headerStyles.headerText}>\n        Restaurants\n      </SourceSansProText>\n    </View>\n  </SafeAreaView>\n);\n\nexport default Header;\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/Header.js",
     "access": "public",
@@ -754,9 +757,16 @@
     "export": true,
     "importPath": "./source/components/common/Header.js",
     "importStyle": "Header",
-    "description": null,
-    "lineNumber": 20,
-    "undocument": true,
+    "description": "Header component which handles search functionality",
+    "lineNumber": 24,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Component"
+      ],
+      "spread": false,
+      "description": null
+    },
     "params": [],
     "return": null
   },
@@ -764,7 +774,7 @@
     "__docId__": 61,
     "kind": "file",
     "name": "source/components/common/LoadingScreen.js",
-    "content": "import React from 'react';\nimport {\n  View,\n  Dimensions,\n} from 'react-native';\nimport { Svg } from 'expo';\nimport SvgAnimatedLinearGradient from 'react-native-svg-animated-linear-gradient';\nimport globalStyles from '../../assets/styles/base/global';\n\nconst { width } = Dimensions.get('window');\nconst blockWidth = width - 30;\n\nconst LoadingScreen = () => (\n  <View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n  </View>\n);\n\nexport default LoadingScreen;\n",
+    "content": "import React from 'react';\nimport {\n  View,\n  Dimensions,\n} from 'react-native';\nimport { Svg } from 'expo';\nimport SvgAnimatedLinearGradient from 'react-native-svg-animated-linear-gradient';\nimport globalStyles from '../../assets/styles/base/global';\n\nconst { width } = Dimensions.get('window');\nconst blockWidth = width - 30;\n\n/**\n * Loading tiles component which shows in the\n * restaurants list till actual data is received.\n * @type {Component}\n */\nconst LoadingScreen = () => (\n  <View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n  </View>\n);\n\nexport default LoadingScreen;\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/LoadingScreen.js",
     "access": "public",
@@ -826,9 +836,16 @@
     "export": true,
     "importPath": "./source/components/common/LoadingScreen.js",
     "importStyle": "LoadingScreen",
-    "description": null,
-    "lineNumber": 13,
-    "undocument": true,
+    "description": "Loading tiles component which shows in the\nrestaurants list till actual data is received.",
+    "lineNumber": 18,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Component"
+      ],
+      "spread": false,
+      "description": null
+    },
     "params": [],
     "return": null
   },
@@ -836,7 +853,7 @@
     "__docId__": 65,
     "kind": "file",
     "name": "source/components/common/ReactiveTextField.js",
-    "content": "import React from 'react';\nimport {\n  View,\n} from 'react-native';\nimport { TextField } from 'react-native-material-textfield';\nimport { inject, observer } from 'mobx-react';\n\nimport placeholders from '../../assets/styles/base/placeholders';\nimport headerStyles from '../../assets/styles/components/header';\n\n@inject('RestaurantStore')\n@observer\nexport default class ReactiveTextField extends React.Component {\n  render() {\n    return (\n      <View style={{\n          display: this.props.RestaurantStore.showSearchbar\n          ? 'flex'\n          : 'none',\n        }}\n      >\n        <TextField\n          style={headerStyles.input}\n          ref={input => {\n            if (input != null) {\n              this.props.RestaurantStore.setClassProps([\n                {\n                  name: 'searchbarRef',\n                  value: input,\n                },\n              ]);\n            }\n          }}\n          label=\"\"\n          textColor={placeholders.darkGray}\n          tintColor={placeholders.darkGray}\n          fontSize={14}\n          labelHeight={0}\n          lineWidth={0}\n          activeLineWidth={0}\n          keyboardType=\"default\"\n          autoCapitalize=\"none\"\n          autoCorrect={false}\n          returnKeyType=\"done\"\n          enablesReturnKeyAutomatically\n          value={this.props.RestaurantStore.searchString}\n          onChangeText={searchString => {\n            this.props.RestaurantStore.setClassProps([\n              {\n                name: 'searchString',\n                value: searchString,\n              },\n            ]);\n          }}\n        />\n      </View>\n    );\n  }\n}\n",
+    "content": "import React from 'react';\nimport {\n  View,\n} from 'react-native';\nimport { TextField } from 'react-native-material-textfield';\nimport { inject, observer } from 'mobx-react';\n\nimport placeholders from '../../assets/styles/base/placeholders';\nimport headerStyles from '../../assets/styles/components/header';\n\n/**\n * Searchbar component which handles the display\n * of the input field and takes in input.\n * @type {Component}\n */\n@inject('RestaurantStore')\n@observer\nexport default class ReactiveTextField extends React.Component {\n  render() {\n    return (\n      <View style={{\n          display: this.props.RestaurantStore.showSearchbar\n          ? 'flex'\n          : 'none',\n        }}\n      >\n        <TextField\n          style={headerStyles.input}\n          ref={input => {\n            if (input != null) {\n              this.props.RestaurantStore.setClassProps([\n                {\n                  name: 'searchbarRef',\n                  value: input,\n                },\n              ]);\n            }\n          }}\n          label=\"\"\n          textColor={placeholders.darkGray}\n          tintColor={placeholders.darkGray}\n          fontSize={14}\n          labelHeight={0}\n          lineWidth={0}\n          activeLineWidth={0}\n          keyboardType=\"default\"\n          autoCapitalize=\"none\"\n          autoCorrect={false}\n          returnKeyType=\"done\"\n          enablesReturnKeyAutomatically\n          value={this.props.RestaurantStore.searchString}\n          onChangeText={searchString => {\n            this.props.RestaurantStore.setClassProps([\n              {\n                name: 'searchString',\n                value: searchString,\n              },\n            ]);\n          }}\n        />\n      </View>\n    );\n  }\n}\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/ReactiveTextField.js",
     "access": "public",
@@ -854,9 +871,16 @@
     "export": true,
     "importPath": "./source/components/common/ReactiveTextField.js",
     "importStyle": "ReactiveTextField",
-    "description": null,
-    "lineNumber": 13,
-    "undocument": true,
+    "description": "Searchbar component which handles the display\nof the input field and takes in input.",
+    "lineNumber": 18,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Component"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "inject",
@@ -883,7 +907,7 @@
     "longname": "source/components/common/ReactiveTextField.js~ReactiveTextField#render",
     "access": "public",
     "description": null,
-    "lineNumber": 14,
+    "lineNumber": 19,
     "undocument": true,
     "params": [],
     "return": {
@@ -896,7 +920,7 @@
     "__docId__": 68,
     "kind": "file",
     "name": "source/components/common/StyledText.js",
-    "content": "import React from 'react';\nimport { Text } from 'react-native';\n\nconst SourceSansProText = props => (\n  <Text\n    {...props}\n    style={[\n      props.style,\n      {\n        fontFamily: props.type || 'SourceSansPro',\n        fontSize: props.size || props.style.fontSize,\n      },\n    ]}\n  />\n);\n\nexport default SourceSansProText;\n",
+    "content": "import React from 'react';\nimport { Text } from 'react-native';\n\n/**\n * Font component - displays text based on type and boldness.\n * @type {Component}\n */\nconst SourceSansProText = props => (\n  <Text\n    {...props}\n    style={[\n      props.style,\n      {\n        fontFamily: props.type || 'SourceSansPro',\n        fontSize: props.size || props.style.fontSize,\n      },\n    ]}\n  />\n);\n\nexport default SourceSansProText;\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/StyledText.js",
     "access": "public",
@@ -916,9 +940,16 @@
     "export": true,
     "importPath": "./source/components/common/StyledText.js",
     "importStyle": "SourceSansProText",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Font component - displays text based on type and boldness.",
+    "lineNumber": 8,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Component"
+      ],
+      "spread": false,
+      "description": null
+    },
     "params": [
       {
         "name": "props",
@@ -933,7 +964,7 @@
     "__docId__": 70,
     "kind": "file",
     "name": "source/components/error/ErrorBoundary.js",
-    "content": "/* eslint-disable no-undef */\n\nimport React from 'react';\nimport { View } from 'react-native';\nimport ErrorAlert from '../common/ErrorAlert';\n\nexport default class ErrorBoundary extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      error: false,\n    };\n  }\n\n  componentDidCatch() {\n    this.setState({\n      error: true,\n    });\n  }\n\n  render() {\n    if (this.state.error) {\n      ErrorAlert();\n      return (\n        <View />\n      );\n    }\n    return this.props.children;\n  }\n}\n",
+    "content": "/* eslint-disable no-undef */\n\nimport React from 'react';\nimport { View } from 'react-native';\nimport ErrorAlert from '../common/ErrorAlert';\n\n/**\n * App wide error component.\n * Handles any error which might occur within the app.\n * @type {Component}\n */\nexport default class ErrorBoundary extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      error: false,\n    };\n  }\n\n  componentDidCatch() {\n    this.setState({\n      error: true,\n    });\n  }\n\n  render() {\n    if (this.state.error) {\n      ErrorAlert();\n      return (\n        <View />\n      );\n    }\n    return this.props.children;\n  }\n}\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/error/ErrorBoundary.js",
     "access": "public",
@@ -951,9 +982,16 @@
     "export": true,
     "importPath": "./source/components/error/ErrorBoundary.js",
     "importStyle": "ErrorBoundary",
-    "description": null,
-    "lineNumber": 7,
-    "undocument": true,
+    "description": "App wide error component.\nHandles any error which might occur within the app.",
+    "lineNumber": 12,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Component"
+      ],
+      "spread": false,
+      "description": null
+    },
     "interface": false,
     "extends": [
       "react~React.Component"
@@ -970,7 +1008,7 @@
     "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 8,
+    "lineNumber": 13,
     "undocument": true
   },
   {
@@ -982,7 +1020,7 @@
     "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary#state",
     "access": "public",
     "description": null,
-    "lineNumber": 10,
+    "lineNumber": 15,
     "undocument": true,
     "type": {
       "types": [
@@ -1001,7 +1039,7 @@
     "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary#componentDidCatch",
     "access": "public",
     "description": null,
-    "lineNumber": 15,
+    "lineNumber": 20,
     "undocument": true,
     "params": [],
     "return": null
@@ -1017,7 +1055,7 @@
     "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary#render",
     "access": "public",
     "description": null,
-    "lineNumber": 21,
+    "lineNumber": 26,
     "undocument": true,
     "params": [],
     "return": {
@@ -1030,7 +1068,7 @@
     "__docId__": 76,
     "kind": "file",
     "name": "source/components/restaurant/RestaurantListItem.js",
-    "content": "/* eslint-disable react/no-array-index-key */\n\nimport React from 'react';\nimport {\n  View,\n  ImageBackground,\n} from 'react-native';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport { Ionicons } from '@expo/vector-icons';\n\nimport { truncateString } from '../../utils/helpers';\nimport SourceSansProText from '../common/StyledText';\nimport placeholders from '../../assets/styles/base/placeholders';\n\nimport globalStyles from '../../assets/styles/base/global';\nimport restaurantStyles from '../../assets/styles/components/restaurant';\n\nconst RestaurantItem = props => (\n  <View style={restaurantStyles.card}>\n    <ImageBackground\n      source={{ uri: props.restaurant.image_url }}\n      imageStyle={{ borderRadius: 5 }}\n      style={restaurantStyles.image}\n    >\n      <View style={restaurantStyles.imageContainer}>\n        <View style={[globalStyles.row, globalStyles.p_h_md, globalStyles.p_v_sm]}>\n          <View style={globalStyles.col_2}>\n            <View style={restaurantStyles.imageTextWrapper}>\n              <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.imageText}>\n                1.6 km\n              </SourceSansProText>\n            </View>\n          </View>\n          <View style={[globalStyles.col_10, { flexDirection: 'row-reverse' }]}>\n            <Ionicons\n              name=\"md-heart-empty\"\n              size={25}\n              color=\"white\"\n            />\n          </View>\n        </View>\n      </View>\n    </ImageBackground>\n    <View style={[globalStyles.p_v_sm, globalStyles.p_h_md]}>\n      <View style={[globalStyles.row, { alignItems: 'center' }]}>\n        <View style={globalStyles.col_8}>\n          <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.title}>\n            {props.restaurant.name}\n          </SourceSansProText>\n        </View>\n        <View style={globalStyles.col_4}>\n          <SourceSansProText style={restaurantStyles.typeText}>\n            {truncateString(props.restaurant.categories[0].title.toUpperCase(), 8)}\n          </SourceSansProText>\n        </View>\n      </View>\n      <View style={[globalStyles.row, { alignItems: 'center' }]}>\n        <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.ratingText}>\n          {props.restaurant.rating}\n        </SourceSansProText>\n        {\n          Array(Math.round(props.restaurant.rating))\n            .fill(Math.round(props.restaurant.rating))\n            .map((elem, index) => (\n              <Ionicons\n                key={`rating-${index}`}\n                name=\"md-star\"\n                size={11}\n                color={placeholders.gold}\n                style={globalStyles.m_r_xs}\n              />\n            ))\n        }\n      </View>\n    </View>\n  </View>\n);\n\nexport default RestaurantItem;\n",
+    "content": "/* eslint-disable react/no-array-index-key */\n\nimport React from 'react';\nimport {\n  View,\n  ImageBackground,\n} from 'react-native';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport { Ionicons } from '@expo/vector-icons';\n\nimport { truncateString } from '../../utils/helpers';\nimport SourceSansProText from '../common/StyledText';\nimport placeholders from '../../assets/styles/base/placeholders';\n\nimport globalStyles from '../../assets/styles/base/global';\nimport restaurantStyles from '../../assets/styles/components/restaurant';\n\n/**\n * Displays individual restaurant tiles within the restarant list component.\n * @type {Component}\n */\nconst RestaurantItem = props => (\n  <View style={restaurantStyles.card}>\n    <ImageBackground\n      source={{ uri: props.restaurant.image_url }}\n      imageStyle={{ borderRadius: 5 }}\n      style={restaurantStyles.image}\n    >\n      <View style={restaurantStyles.imageContainer}>\n        <View style={[globalStyles.row, globalStyles.p_h_md, globalStyles.p_v_sm]}>\n          <View style={globalStyles.col_2}>\n            <View style={restaurantStyles.imageTextWrapper}>\n              <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.imageText}>\n                1.6 km\n              </SourceSansProText>\n            </View>\n          </View>\n          <View style={[globalStyles.col_10, { flexDirection: 'row-reverse' }]}>\n            <Ionicons\n              name=\"md-heart-empty\"\n              size={25}\n              color=\"white\"\n            />\n          </View>\n        </View>\n      </View>\n    </ImageBackground>\n    <View style={[globalStyles.p_v_sm, globalStyles.p_h_md]}>\n      <View style={[globalStyles.row, { alignItems: 'center' }]}>\n        <View style={globalStyles.col_8}>\n          <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.title}>\n            {props.restaurant.name}\n          </SourceSansProText>\n        </View>\n        <View style={globalStyles.col_4}>\n          <SourceSansProText style={restaurantStyles.typeText}>\n            {truncateString(props.restaurant.categories[0].title.toUpperCase(), 8)}\n          </SourceSansProText>\n        </View>\n      </View>\n      <View style={[globalStyles.row, { alignItems: 'center' }]}>\n        <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.ratingText}>\n          {props.restaurant.rating}\n        </SourceSansProText>\n        {\n          Array(Math.round(props.restaurant.rating))\n            .fill(Math.round(props.restaurant.rating))\n            .map((elem, index) => (\n              <Ionicons\n                key={`rating-${index}`}\n                name=\"md-star\"\n                size={11}\n                color={placeholders.gold}\n                style={globalStyles.m_r_xs}\n              />\n            ))\n        }\n      </View>\n    </View>\n  </View>\n);\n\nexport default RestaurantItem;\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/restaurant/RestaurantListItem.js",
     "access": "public",
@@ -1050,9 +1088,16 @@
     "export": true,
     "importPath": "./source/components/restaurant/RestaurantListItem.js",
     "importStyle": "RestaurantItem",
-    "description": null,
-    "lineNumber": 19,
-    "undocument": true,
+    "description": "Displays individual restaurant tiles within the restarant list component.",
+    "lineNumber": 23,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Component"
+      ],
+      "spread": false,
+      "description": null
+    },
     "params": [
       {
         "name": "props",
@@ -1067,7 +1112,7 @@
     "__docId__": 78,
     "kind": "file",
     "name": "source/components/restaurant/RestaurantListScreen.js",
-    "content": "import React from 'react';\nimport {\n  ScrollView,\n  View,\n  FlatList,\n  TouchableOpacity,\n} from 'react-native';\nimport { toJS } from 'mobx';\nimport { inject, observer } from 'mobx-react';\nimport RestaurantListItem from './RestaurantListItem';\nimport { renderIf } from '../../utils/helpers';\n\nimport restaurantStyles from '../../assets/styles/components/restaurant';\nimport LoadingScreen from '../common/LoadingScreen';\n\n@inject('RestaurantStore')\n@observer\nexport default class RestaurantScreen extends React.Component {\n\tconstructor(props) {\n    super(props);\n    props.RestaurantStore.getRestaurants();\n  }\n\n  renderItems = props => (\n    <TouchableOpacity\n      key={props.item.id}\n      onPress={() => this.props.navigation.navigate('Restaurant', { data: toJS(props.item) })}\n    >\n      <RestaurantListItem restaurant={props.item} />\n    </TouchableOpacity>\n  )\n\n  render() {\n    return (\n      <View style={{ flex: 1 }}>\n        {\n          renderIf(\n            this.props.RestaurantStore.loading,\n            <ScrollView style={restaurantStyles.container}>\n              <LoadingScreen />\n            </ScrollView>,\n          )\n        }\n        {\n          renderIf(\n            !this.props.RestaurantStore.loading,\n            (\n              <FlatList\n                style={restaurantStyles.container}\n                data={toJS(this.props.RestaurantStore.restaurants)}\n                renderItem={this.renderItems}\n                keyExtractor={item => item.id}\n                refreshing={this.props.RestaurantStore.refreshing}\n                onRefresh={() => this.props.RestaurantStore.getRestaurants('refresh')}\n                onEndReached={this.props.RestaurantStore.onEndReached}\n                onEndReachedThreshold={0.4}\n                initialNumToRender={10}\n              />\n            ),\n          )\n        }\n\n      </View>\n    );\n  }\n}\n",
+    "content": "import React from 'react';\nimport {\n  ScrollView,\n  View,\n  FlatList,\n  TouchableOpacity,\n} from 'react-native';\nimport { toJS } from 'mobx';\nimport { inject, observer } from 'mobx-react';\nimport RestaurantListItem from './RestaurantListItem';\nimport { renderIf } from '../../utils/helpers';\n\nimport restaurantStyles from '../../assets/styles/components/restaurant';\nimport LoadingScreen from '../common/LoadingScreen';\n\n/**\n * RestaurantListScreen displays an infinite list of restaurants,\n * based on scroll position, loading animation in the absense of data,\n * and loaction search functionality\n * @type {Component}\n */\n@inject('RestaurantStore')\n@observer\nexport default class RestaurantListScreen extends React.Component {\n  /**\n   * Gets the list of restaurants on load\n   * @constructor\n   * @param {Object} props\n   */\n\tconstructor(props) {\n    super(props);\n    props.RestaurantStore.getRestaurants();\n  }\n\n  /**\n   * Renders individual restaurant tiles\n   * @param {Object} props\n   */\n  renderItems = props => (\n    <TouchableOpacity\n      key={props.item.id}\n      onPress={() => this.props.navigation.navigate('Restaurant', { data: toJS(props.item) })}\n    >\n      <RestaurantListItem restaurant={props.item} />\n    </TouchableOpacity>\n  )\n\n  render() {\n    return (\n      <View style={{ flex: 1 }}>\n        {\n          renderIf(\n            this.props.RestaurantStore.loading,\n            <ScrollView style={restaurantStyles.container}>\n              <LoadingScreen />\n            </ScrollView>,\n          )\n        }\n        {\n          renderIf(\n            !this.props.RestaurantStore.loading,\n            (\n              <FlatList\n                style={restaurantStyles.container}\n                data={toJS(this.props.RestaurantStore.restaurants)}\n                renderItem={this.renderItems}\n                keyExtractor={item => item.id}\n                refreshing={this.props.RestaurantStore.refreshing}\n                onRefresh={() => this.props.RestaurantStore.getRestaurants('refresh')}\n                onEndReached={this.props.RestaurantStore.onEndReached}\n                onEndReachedThreshold={0.4}\n                initialNumToRender={10}\n              />\n            ),\n          )\n        }\n\n      </View>\n    );\n  }\n}\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/restaurant/RestaurantListScreen.js",
     "access": "public",
@@ -1077,17 +1122,24 @@
   {
     "__docId__": 79,
     "kind": "class",
-    "name": "RestaurantScreen",
+    "name": "RestaurantListScreen",
     "memberof": "source/components/restaurant/RestaurantListScreen.js",
     "static": true,
-    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen",
+    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen",
     "access": "public",
     "export": true,
     "importPath": "./source/components/restaurant/RestaurantListScreen.js",
-    "importStyle": "RestaurantScreen",
-    "description": null,
-    "lineNumber": 18,
-    "undocument": true,
+    "importStyle": "RestaurantListScreen",
+    "description": "RestaurantListScreen displays an infinite list of restaurants,\nbased on scroll position, loading animation in the absense of data,\nand loaction search functionality",
+    "lineNumber": 24,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Component"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "inject",
@@ -1107,27 +1159,55 @@
     "__docId__": 80,
     "kind": "constructor",
     "name": "constructor",
-    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen",
+    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#constructor",
+    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen#constructor",
     "access": "public",
-    "description": null,
-    "lineNumber": 19,
-    "undocument": true
+    "description": "Gets the list of restaurants on load",
+    "lineNumber": 30,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": ""
+      }
+    ]
   },
   {
     "__docId__": 81,
     "kind": "member",
     "name": "renderItems",
-    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen",
+    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen",
     "static": false,
-    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#renderItems",
+    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen#renderItems",
     "access": "public",
-    "description": null,
-    "lineNumber": 24,
-    "undocument": true,
+    "description": "Renders individual restaurant tiles",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": ""
+      }
+    ],
     "type": {
       "types": [
         "*"
@@ -1138,14 +1218,14 @@
     "__docId__": 82,
     "kind": "method",
     "name": "render",
-    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen",
+    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#render",
+    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen#render",
     "access": "public",
     "description": null,
-    "lineNumber": 33,
+    "lineNumber": 48,
     "undocument": true,
     "params": [],
     "return": {
@@ -1158,7 +1238,7 @@
     "__docId__": 83,
     "kind": "file",
     "name": "source/components/restaurant/RestaurantScreen.js",
-    "content": "/* eslint-disable react/no-array-index-key */\n\nimport React from 'react';\nimport {\n  View,\n  ScrollView,\n  ImageBackground,\n  TouchableOpacity,\n  Image,\n  Linking,\n} from 'react-native';\nimport { MapView } from 'expo';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport {\n  Ionicons,\n  MaterialIcons,\n  EvilIcons,\n  FontAwesome5,\n} from '@expo/vector-icons';\n\nimport { truncateString } from '../../utils/helpers';\nimport SourceSansProText from '../common/StyledText';\nimport ErrorAlert from '../common/ErrorAlert';\nimport placeholders from '../../assets/styles/base/placeholders';\n\nimport globalStyles from '../../assets/styles/base/global';\nimport restaurantStyles from '../../assets/styles/components/restaurant';\n\nconst LATITUDE_DELTA = 0.15;\nconst LONGITUDE_DELTA = 0.15;\n\nexport default class RestaurantScreen extends React.Component {\n  static navigationOptions = {\n    header: null,\n  };\n\n  render() {\n    const restaurant = this.props.navigation.getParam('data');\n    return (\n      <View style={restaurantStyles.viewWrapper}>\n        <ScrollView>\n          <ImageBackground\n            source={{ uri: restaurant.image_url }}\n            style={[\n              restaurantStyles.image,\n              { height: 300, borderRadius: 0 },\n            ]}\n          >\n            <View style={restaurantStyles.imageContainer}>\n              <View style={[globalStyles.row, globalStyles.m_t_lg, globalStyles.m_h_md]}>\n                <View style={globalStyles.col_2}>\n                  <TouchableOpacity\n                    onPress={() => this.props.navigation.navigate('RestaurantList')}\n                  >\n                    <Ionicons\n                      name=\"md-arrow-back\"\n                      size={30}\n                      color=\"white\"\n                    />\n                  </TouchableOpacity>\n                </View>\n                <View style={[globalStyles.col_10, { flexDirection: 'row-reverse' }]}>\n                  <Ionicons\n                    name=\"md-heart-empty\"\n                    size={30}\n                    color=\"white\"\n                  />\n                </View>\n              </View>\n            </View>\n          </ImageBackground>\n          <View style={[globalStyles.p_v_sm, { paddingHorizontal: 15 }]}>\n            <View style={[globalStyles.row, globalStyles.p_t_xs, globalStyles.p_b_sm, { alignItems: 'center' }, restaurantStyles.borderBottom]}>\n              <View style={globalStyles.col_3}>\n                <Image\n                  source={require('../../assets/images/placeholders/pizzaLogo.jpg')}\n                  resizeMode=\"contain\"\n                  style={{ width: 70, height: 70 }}\n                />\n              </View>\n              <View style={globalStyles.col_7}>\n                <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.title}>\n                  {restaurant.name}\n                </SourceSansProText>\n                <View style={[globalStyles.row, { alignItems: 'center' }]}>\n                  <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.ratingText}>\n                    {restaurant.rating}\n                  </SourceSansProText>\n                  {\n                    Array(Math.round(restaurant.rating))\n                      .fill(Math.round(restaurant.rating))\n                      .map((elem, index) => (\n                        <Ionicons\n                          key={`rating-${index}`}\n                          name=\"md-star\"\n                          size={11}\n                          color={placeholders.gold}\n                          style={globalStyles.m_r_xs}\n                        />\n                      ))\n                  }\n                  <SourceSansProText style={[{ marginLeft: 7 }, globalStyles.m_r_sm]}>\n                    •\n                  </SourceSansProText>\n                  <SourceSansProText style={{ color: placeholders.darkGray }}>\n                    {truncateString(restaurant.categories[0].title, 8)}\n                  </SourceSansProText>\n                </View>\n              </View>\n              <View style={globalStyles.col_2}>\n                <View style={[\n                    restaurantStyles.imageTextWrapper,\n                    { backgroundColor: placeholders.gold },\n                  ]}\n                >\n                  <SourceSansProText\n                    type=\"SourceSansProSemiBold\"\n                    style={[restaurantStyles.imageText, { fontSize: 90 }]}\n                  >\n                    1.6 km\n                  </SourceSansProText>\n                </View>\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_sm, { alignItems: 'center' }, restaurantStyles.borderBottom]}>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(`tel:${restaurant.phone}`)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <Ionicons\n                  name=\"md-call\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Call\n                </SourceSansProText>\n              </TouchableOpacity>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(restaurant.url)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <Ionicons\n                  name=\"md-globe\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Website\n                </SourceSansProText>\n              </TouchableOpacity>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(`maps://maps.google.com/maps?daddr=${restaurant.coordinates.latitude},${restaurant.coordinates.latitude}&amp;ll=`)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <MaterialIcons\n                  name=\"directions\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Directions\n                </SourceSansProText>\n              </TouchableOpacity>\n              <View style={[globalStyles.col_3, { alignItems: 'center' }]}>\n                <Ionicons\n                  name=\"md-chatbubbles\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Invite\n                </SourceSansProText>\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <Image\n                  source={require('../../assets/images/icons/opentable.png')}\n                  resizeMode=\"contain\"\n                  style={{ width: 25, height: 25 }}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Book a table with Opentable\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"chevron-right\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <Image\n                  source={require('../../assets/images/icons/uber.png')}\n                  resizeMode=\"contain\"\n                  style={{ width: 25, height: 25 }}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Request a ride with Uber\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"chevron-right\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <EvilIcons\n                  name=\"clock\"\n                  size={30}\n                  color={placeholders.darkGray}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Open Now (07-24h)\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"keyboard-arrow-down\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <FontAwesome5\n                  name=\"book-reader\"\n                  size={20}\n                  color={placeholders.darkGray}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Menu\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <Ionicons\n                  name=\"md-link\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <MapView.Animated\n              style={restaurantStyles.map}\n              provider={MapView.PROVIDER_GOOGLE}\n              initialRegion={new MapView.AnimatedRegion({\n                latitude: restaurant.coordinates.latitude,\n                longitude: restaurant.coordinates.longitude,\n                latitudeDelta: LATITUDE_DELTA,\n                longitudeDelta: LONGITUDE_DELTA,\n              })}\n              region={new MapView.AnimatedRegion({\n                latitude: restaurant.coordinates.latitude,\n                longitude: restaurant.coordinates.longitude,\n                latitudeDelta: LATITUDE_DELTA,\n                longitudeDelta: LONGITUDE_DELTA,\n              })}\n            >\n              <MapView.Marker\n                coordinate={{\n                  latitude: restaurant.coordinates.latitude,\n                  longitude: restaurant.coordinates.longitude,\n                }}\n                title={restaurant.name}\n              />\n            </MapView.Animated>\n\n          </View>\n        </ScrollView>\n        <View style={[\n            globalStyles.bottom,\n            globalStyles.p_v_sm,\n            restaurantStyles.bottom,\n          ]}\n        >\n          <SourceSansProText size={16} style={restaurantStyles.bottomText}>\n            VIEW OFFERS\n          </SourceSansProText>\n        </View>\n      </View>\n    );\n  }\n}\n",
+    "content": "/* eslint-disable react/no-array-index-key */\n\nimport React from 'react';\nimport {\n  View,\n  ScrollView,\n  ImageBackground,\n  TouchableOpacity,\n  Image,\n  Linking,\n} from 'react-native';\nimport { MapView } from 'expo';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport {\n  Ionicons,\n  MaterialIcons,\n  EvilIcons,\n  FontAwesome5,\n} from '@expo/vector-icons';\n\nimport { truncateString } from '../../utils/helpers';\nimport SourceSansProText from '../common/StyledText';\nimport ErrorAlert from '../common/ErrorAlert';\nimport placeholders from '../../assets/styles/base/placeholders';\n\nimport globalStyles from '../../assets/styles/base/global';\nimport restaurantStyles from '../../assets/styles/components/restaurant';\n\nconst LATITUDE_DELTA = 0.15;\nconst LONGITUDE_DELTA = 0.15;\n\n/**\n * Single restaurant view,\n * handles map view (loacation and direction),\n * link to tel, and website.\n * @type {Component}\n */\nexport default class RestaurantScreen extends React.Component {\n  static navigationOptions = {\n    header: null,\n  };\n\n  render() {\n    const restaurant = this.props.navigation.getParam('data');\n    return (\n      <View style={restaurantStyles.viewWrapper}>\n        <ScrollView>\n          <ImageBackground\n            source={{ uri: restaurant.image_url }}\n            style={[\n              restaurantStyles.image,\n              { height: 300, borderRadius: 0 },\n            ]}\n          >\n            <View style={restaurantStyles.imageContainer}>\n              <View style={[globalStyles.row, globalStyles.m_t_lg, globalStyles.m_h_md]}>\n                <View style={globalStyles.col_2}>\n                  <TouchableOpacity\n                    onPress={() => this.props.navigation.navigate('RestaurantList')}\n                  >\n                    <Ionicons\n                      name=\"md-arrow-back\"\n                      size={30}\n                      color=\"white\"\n                    />\n                  </TouchableOpacity>\n                </View>\n                <View style={[globalStyles.col_10, { flexDirection: 'row-reverse' }]}>\n                  <Ionicons\n                    name=\"md-heart-empty\"\n                    size={30}\n                    color=\"white\"\n                  />\n                </View>\n              </View>\n            </View>\n          </ImageBackground>\n          <View style={[globalStyles.p_v_sm, { paddingHorizontal: 15 }]}>\n            <View style={[globalStyles.row, globalStyles.p_t_xs, globalStyles.p_b_sm, { alignItems: 'center' }, restaurantStyles.borderBottom]}>\n              <View style={globalStyles.col_3}>\n                <Image\n                  source={require('../../assets/images/placeholders/pizzaLogo.jpg')}\n                  resizeMode=\"contain\"\n                  style={{ width: 70, height: 70 }}\n                />\n              </View>\n              <View style={globalStyles.col_7}>\n                <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.title}>\n                  {restaurant.name}\n                </SourceSansProText>\n                <View style={[globalStyles.row, { alignItems: 'center' }]}>\n                  <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.ratingText}>\n                    {restaurant.rating}\n                  </SourceSansProText>\n                  {\n                    Array(Math.round(restaurant.rating))\n                      .fill(Math.round(restaurant.rating))\n                      .map((elem, index) => (\n                        <Ionicons\n                          key={`rating-${index}`}\n                          name=\"md-star\"\n                          size={11}\n                          color={placeholders.gold}\n                          style={globalStyles.m_r_xs}\n                        />\n                      ))\n                  }\n                  <SourceSansProText style={[{ marginLeft: 7 }, globalStyles.m_r_sm]}>\n                    •\n                  </SourceSansProText>\n                  <SourceSansProText style={{ color: placeholders.darkGray }}>\n                    {truncateString(restaurant.categories[0].title, 8)}\n                  </SourceSansProText>\n                </View>\n              </View>\n              <View style={globalStyles.col_2}>\n                <View style={[\n                    restaurantStyles.imageTextWrapper,\n                    { backgroundColor: placeholders.gold },\n                  ]}\n                >\n                  <SourceSansProText\n                    type=\"SourceSansProSemiBold\"\n                    style={[restaurantStyles.imageText, { fontSize: 90 }]}\n                  >\n                    1.6 km\n                  </SourceSansProText>\n                </View>\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_sm, { alignItems: 'center' }, restaurantStyles.borderBottom]}>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(`tel:${restaurant.phone}`)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <Ionicons\n                  name=\"md-call\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Call\n                </SourceSansProText>\n              </TouchableOpacity>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(restaurant.url)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <Ionicons\n                  name=\"md-globe\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Website\n                </SourceSansProText>\n              </TouchableOpacity>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(`maps://maps.google.com/maps?daddr=${restaurant.coordinates.latitude},${restaurant.coordinates.latitude}&amp;ll=`)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <MaterialIcons\n                  name=\"directions\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Directions\n                </SourceSansProText>\n              </TouchableOpacity>\n              <View style={[globalStyles.col_3, { alignItems: 'center' }]}>\n                <Ionicons\n                  name=\"md-chatbubbles\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Invite\n                </SourceSansProText>\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <Image\n                  source={require('../../assets/images/icons/opentable.png')}\n                  resizeMode=\"contain\"\n                  style={{ width: 25, height: 25 }}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Book a table with Opentable\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"chevron-right\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <Image\n                  source={require('../../assets/images/icons/uber.png')}\n                  resizeMode=\"contain\"\n                  style={{ width: 25, height: 25 }}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Request a ride with Uber\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"chevron-right\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <EvilIcons\n                  name=\"clock\"\n                  size={30}\n                  color={placeholders.darkGray}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Open Now (07-24h)\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"keyboard-arrow-down\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <FontAwesome5\n                  name=\"book-reader\"\n                  size={20}\n                  color={placeholders.darkGray}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Menu\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <Ionicons\n                  name=\"md-link\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <MapView.Animated\n              style={restaurantStyles.map}\n              provider={MapView.PROVIDER_GOOGLE}\n              initialRegion={new MapView.AnimatedRegion({\n                latitude: restaurant.coordinates.latitude,\n                longitude: restaurant.coordinates.longitude,\n                latitudeDelta: LATITUDE_DELTA,\n                longitudeDelta: LONGITUDE_DELTA,\n              })}\n              region={new MapView.AnimatedRegion({\n                latitude: restaurant.coordinates.latitude,\n                longitude: restaurant.coordinates.longitude,\n                latitudeDelta: LATITUDE_DELTA,\n                longitudeDelta: LONGITUDE_DELTA,\n              })}\n            >\n              <MapView.Marker\n                coordinate={{\n                  latitude: restaurant.coordinates.latitude,\n                  longitude: restaurant.coordinates.longitude,\n                }}\n                title={restaurant.name}\n              />\n            </MapView.Animated>\n\n          </View>\n        </ScrollView>\n        <View style={[\n            globalStyles.bottom,\n            globalStyles.p_v_sm,\n            restaurantStyles.bottom,\n          ]}\n        >\n          <SourceSansProText size={16} style={restaurantStyles.bottomText}>\n            VIEW OFFERS\n          </SourceSansProText>\n        </View>\n      </View>\n    );\n  }\n}\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/restaurant/RestaurantScreen.js",
     "access": "public",
@@ -1218,9 +1298,16 @@
     "export": true,
     "importPath": "./source/components/restaurant/RestaurantScreen.js",
     "importStyle": "RestaurantScreen",
-    "description": null,
-    "lineNumber": 33,
-    "undocument": true,
+    "description": "Single restaurant view,\nhandles map view (loacation and direction),\nlink to tel, and website.",
+    "lineNumber": 39,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Component"
+      ],
+      "spread": false,
+      "description": null
+    },
     "interface": false,
     "extends": [
       "react~React.Component"
@@ -1235,7 +1322,7 @@
     "longname": "source/components/restaurant/RestaurantScreen.js~RestaurantScreen.navigationOptions",
     "access": "public",
     "description": null,
-    "lineNumber": 34,
+    "lineNumber": 40,
     "undocument": true,
     "type": {
       "types": [
@@ -1254,7 +1341,7 @@
     "longname": "source/components/restaurant/RestaurantScreen.js~RestaurantScreen#render",
     "access": "public",
     "description": null,
-    "lineNumber": 38,
+    "lineNumber": 44,
     "undocument": true,
     "params": [],
     "return": {
@@ -1267,7 +1354,7 @@
     "__docId__": 89,
     "kind": "file",
     "name": "source/stores/AppStore.js",
-    "content": "import { configure, observable, action } from 'mobx';\nimport { setClassProps } from '../utils/helpers';\n\nconfigure({ computedRequiresReaction: 'strict' });\n\n/**\n * MobX store class.\n * This creates the base store for the app.\n * It containes configuration for all stores and app wide preferences.\n * @class\n */\nexport default class AppStore {\n\t/**\n\t * name - Dummy Varaible\n\t * @var\n\t */\n\t@observable name = 'AppStore';\n\n\t/**\n\t * setClassProps - Used to assign values to the members of\n\t *  this class from an external function or a react component.\n\t * @param {Array} arr - An array key:value pairs of class members and their values\n\t * @param {Object} self - Refers to the class itself or a member which is a member.\n\t */\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n}\n",
+    "content": "import { configure, observable, action } from 'mobx';\nimport { setClassProps } from '../utils/helpers';\n\nconfigure({ computedRequiresReaction: 'strict' });\n\n/**\n * MobX store class.\n * This creates the base store for the app.\n * It containes configuration for all stores and app wide preferences.\n * @class\n */\nexport default class AppStore {\n\t/**\n\t * Dummy Varaible\n\t * @type {string}\n\t */\n\t@observable name = 'AppStore';\n\n\t/**\n\t * Function used to assign values to the members of\n\t *  this class from an external function or a react component.\n\t * @param {Array} arr - An array key:value pairs of class members and their values\n\t * @param {Object} self - Refers to the class itself or a member which is a member.\n\t */\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n}\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/stores/AppStore.js",
     "access": "public",
@@ -1303,25 +1390,22 @@
     "static": false,
     "longname": "source/stores/AppStore.js~AppStore#name",
     "access": "public",
-    "description": "name - Dummy Varaible",
+    "description": "Dummy Varaible",
     "lineNumber": 17,
-    "unknown": [
-      {
-        "tagName": "@var",
-        "tagValue": ""
-      }
-    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "observable",
         "arguments": null
       }
-    ],
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
+    ]
   },
   {
     "__docId__": 92,
@@ -1331,7 +1415,7 @@
     "static": false,
     "longname": "source/stores/AppStore.js~AppStore#setClassProps",
     "access": "public",
-    "description": "setClassProps - Used to assign values to the members of\n this class from an external function or a react component.",
+    "description": "Function used to assign values to the members of\n this class from an external function or a react component.",
     "lineNumber": 26,
     "params": [
       {
@@ -1371,7 +1455,7 @@
     "__docId__": 93,
     "kind": "file",
     "name": "source/stores/RestaurantStore.js",
-    "content": "import { observable, action, toJS } from 'mobx';\nimport {\n\tsetClassProps,\n\trunInActionUtil,\n\tgetData,\n} from '../utils/helpers';\n\nexport default class RestaurantStore {\n\tsearchbarRef = '';\n\n\t@observable loading = false;\n\n\t@observable refreshing = false;\n\n\t@observable restaurants = [];\n\n\t@observable showSearchbar = false;\n\n\t@observable searchString = '';\n\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n\n\t@action\n\tgetRestaurants = (type = 'load', location = 'NYC') => {\n\t\tif (type === 'load') this.loading = true;\n\t\telse this.refreshing = true;\n\t\tgetData(`https://api.yelp.com/v3/businesses/search?location=${location}&term=restaurant&limit=20`)\n\t\t\t.then(result => {\n\t\t\t\trunInActionUtil(result.data.businesses, 'restaurants', this);\n\t\t\t\tif (type === 'load') runInActionUtil(false, 'loading', this);\n\t\t\t\telse runInActionUtil(false, 'refreshing', this);\n\t\t\t});\n\t};\n\n\t@action\n\tonEndReached = () => {\n\t\tconst offset = toJS(this.restaurants).length;\n\t\tconst location = this.searchString || 'NYC';\n\t\tgetData(`https://api.yelp.com/v3/businesses/search?location=${location}&term=restaurant&limit=20&offset=${offset}`)\n\t\t\t.then(result => {\n\t\t\t\trunInActionUtil(\n\t\t\t\t\ttoJS(this.restaurants).concat(result.data.businesses),\n\t\t\t\t\t'restaurants',\n\t\t\t\t\tthis,\n\t\t\t\t);\n\t\t\t});\n\t};\n}\n",
+    "content": "import { observable, action, toJS } from 'mobx';\nimport {\n\tsetClassProps,\n\trunInActionUtil,\n\tgetData,\n} from '../utils/helpers';\n\n/**\n * MobX store class.\n * For restaurant component and related actions.\n * @class\n */\nexport default class RestaurantStore {\n\t/**\n\t * This holds a reference to the searchbar component.\n\t * @type {Object}\n\t */\n\tsearchbarRef = '';\n\n\t/**\n\t * This controls the display of the loading animation in the restaurant list component.\n\t * @type {Boolean}\n\t */\n\t@observable loading = false;\n\n\t/**\n\t * This controls the refreshing indicator on pull down in the restaurant list component\n\t * @type {Boolean}\n\t */\n\t@observable refreshing = false;\n\n\t/**\n\t * This is an array of objects containing individual restaurant data.\n\t * @type {Array}\n\t */\n\t@observable restaurants = [];\n\n\t/**\n\t * This switch shows and hides the searchbar.\n\t * @type {Boolean}\n\t */\n\t@observable showSearchbar = false;\n\n\t/**\n\t * This holds the location search query string.\n\t * @type {Boolean}\n\t */\n\t@observable searchString = '';\n\n\t/**\n\t * Function used to assign values to the members of\n\t * this class from an external function or a react component.\n\t * @param {Array} arr - An array key:value pairs of class members and their values\n\t * @param {Object} self - Refers to the class itself or a member which is a member.\n\t */\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n\n\t/**\n\t * Function used to both get the array of restaurants on initial load,\n\t * refresh the list on pull to refresh,\n\t * and get new restaurants based on search query.\n\t * @param {string} load - load type, either load or refresh.\n\t * @param {string} location - location parameter.\n\t */\n\t@action\n\tgetRestaurants = (type = 'load', location = 'NYC') => {\n\t\tif (type === 'load') this.loading = true;\n\t\telse this.refreshing = true;\n\t\tgetData(`https://api.yelp.com/v3/businesses/search?location=${location}&term=restaurant&limit=20`)\n\t\t\t.then(result => {\n\t\t\t\trunInActionUtil(result.data.businesses, 'restaurants', this);\n\t\t\t\tif (type === 'load') runInActionUtil(false, 'loading', this);\n\t\t\t\telse runInActionUtil(false, 'refreshing', this);\n\t\t\t});\n\t};\n\n\t/**\n\t * Function used during infinite scrolling.\n\t * It's triggered when the scroll has reached the specified threshold.\n\t */\n\t@action\n\tonEndReached = () => {\n\t\tconst offset = toJS(this.restaurants).length;\n\t\tconst location = this.searchString || 'NYC';\n\t\tgetData(`https://api.yelp.com/v3/businesses/search?location=${location}&term=restaurant&limit=20&offset=${offset}`)\n\t\t\t.then(result => {\n\t\t\t\trunInActionUtil(\n\t\t\t\t\ttoJS(this.restaurants).concat(result.data.businesses),\n\t\t\t\t\t'restaurants',\n\t\t\t\t\tthis,\n\t\t\t\t);\n\t\t\t});\n\t};\n}\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/stores/RestaurantStore.js",
     "access": "public",
@@ -1389,9 +1473,14 @@
     "export": true,
     "importPath": "./source/stores/RestaurantStore.js",
     "importStyle": "RestaurantStore",
-    "description": null,
-    "lineNumber": 8,
-    "undocument": true,
+    "description": "MobX store class.\nFor restaurant component and related actions.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": ""
+      }
+    ],
     "interface": false
   },
   {
@@ -1402,13 +1491,15 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#searchbarRef",
     "access": "public",
-    "description": null,
-    "lineNumber": 9,
-    "undocument": true,
+    "description": "This holds a reference to the searchbar component.",
+    "lineNumber": 18,
     "type": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Object"
+      ],
+      "spread": false,
+      "description": null
     }
   },
   {
@@ -1419,20 +1510,22 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#loading",
     "access": "public",
-    "description": null,
-    "lineNumber": 11,
-    "undocument": true,
+    "description": "This controls the display of the loading animation in the restaurant list component.",
+    "lineNumber": 24,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "observable",
         "arguments": null
       }
-    ],
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
+    ]
   },
   {
     "__docId__": 97,
@@ -1442,20 +1535,22 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#refreshing",
     "access": "public",
-    "description": null,
-    "lineNumber": 13,
-    "undocument": true,
+    "description": "This controls the refreshing indicator on pull down in the restaurant list component",
+    "lineNumber": 30,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "observable",
         "arguments": null
       }
-    ],
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
+    ]
   },
   {
     "__docId__": 98,
@@ -1465,20 +1560,22 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#restaurants",
     "access": "public",
-    "description": null,
-    "lineNumber": 15,
-    "undocument": true,
+    "description": "This is an array of objects containing individual restaurant data.",
+    "lineNumber": 36,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "observable",
         "arguments": null
       }
-    ],
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
+    ]
   },
   {
     "__docId__": 99,
@@ -1488,20 +1585,22 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#showSearchbar",
     "access": "public",
-    "description": null,
-    "lineNumber": 17,
-    "undocument": true,
+    "description": "This switch shows and hides the searchbar.",
+    "lineNumber": 42,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "observable",
         "arguments": null
       }
-    ],
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
+    ]
   },
   {
     "__docId__": 100,
@@ -1511,20 +1610,22 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#searchString",
     "access": "public",
-    "description": null,
-    "lineNumber": 19,
-    "undocument": true,
+    "description": "This holds the location search query string.",
+    "lineNumber": 48,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "observable",
         "arguments": null
       }
-    ],
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
+    ]
   },
   {
     "__docId__": 101,
@@ -1534,9 +1635,30 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#setClassProps",
     "access": "public",
-    "description": null,
-    "lineNumber": 22,
-    "undocument": true,
+    "description": "Function used to assign values to the members of\nthis class from an external function or a react component.",
+    "lineNumber": 57,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "An array key:value pairs of class members and their values"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "self",
+        "description": "Refers to the class itself or a member which is a member."
+      }
+    ],
     "decorators": [
       {
         "name": "action",
@@ -1557,9 +1679,30 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#getRestaurants",
     "access": "public",
-    "description": null,
-    "lineNumber": 25,
-    "undocument": true,
+    "description": "Function used to both get the array of restaurants on initial load,\nrefresh the list on pull to refresh,\nand get new restaurants based on search query.",
+    "lineNumber": 67,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "load",
+        "description": "load type, either load or refresh."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "location",
+        "description": "location parameter."
+      }
+    ],
     "decorators": [
       {
         "name": "action",
@@ -1580,9 +1723,8 @@
     "static": false,
     "longname": "source/stores/RestaurantStore.js~RestaurantStore#onEndReached",
     "access": "public",
-    "description": null,
-    "lineNumber": 37,
-    "undocument": true,
+    "description": "Function used during infinite scrolling.\nIt's triggered when the scroll has reached the specified threshold.",
+    "lineNumber": 83,
     "decorators": [
       {
         "name": "action",
@@ -1599,7 +1741,7 @@
     "__docId__": 106,
     "kind": "file",
     "name": "source/stores/UIStore.js",
-    "content": "import { observable, action } from 'mobx';\nimport { setClassProps } from '../utils/helpers';\n\nexport default class UIStore {\n\tnavigation = '';\n\n\t@observable activeModals = {\n\t\topen: false,\n\t\ttype: 'loading',\n\t};\n\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n}\n",
+    "content": "import { observable, action } from 'mobx';\nimport { setClassProps } from '../utils/helpers';\n\n/**\n * MobX store class.\n * For app wide UI configurations (e.g modals and tabs)\n * @class\n */\nexport default class UIStore {\n\t/**\n\t * Dummy Variable\n\t * @type {string}\n\t */\n\t@observable name = 'UIStore';\n\n\t/**\n\t * Function used to assign values to the members of\n\t *  this class from an external function or a react component.\n\t * @param {Array} arr - An array key:value pairs of class members and their values\n\t * @param {Object} self - Refers to the class itself or a member which is a member.\n\t */\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n}\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/stores/UIStore.js",
     "access": "public",
@@ -1617,62 +1759,73 @@
     "export": true,
     "importPath": "./source/stores/UIStore.js",
     "importStyle": "UIStore",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "MobX store class.\nFor app wide UI configurations (e.g modals and tabs)",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": ""
+      }
+    ],
     "interface": false
   },
   {
     "__docId__": 108,
     "kind": "member",
-    "name": "navigation",
+    "name": "name",
     "memberof": "source/stores/UIStore.js~UIStore",
     "static": false,
-    "longname": "source/stores/UIStore.js~UIStore#navigation",
+    "longname": "source/stores/UIStore.js~UIStore#name",
     "access": "public",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
+    "description": "Dummy Variable",
+    "lineNumber": 14,
     "type": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 109,
-    "kind": "member",
-    "name": "activeModals",
-    "memberof": "source/stores/UIStore.js~UIStore",
-    "static": false,
-    "longname": "source/stores/UIStore.js~UIStore#activeModals",
-    "access": "public",
-    "description": null,
-    "lineNumber": 7,
-    "undocument": true,
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    },
     "decorators": [
       {
         "name": "observable",
         "arguments": null
       }
-    ],
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
+    ]
   },
   {
-    "__docId__": 110,
+    "__docId__": 109,
     "kind": "member",
     "name": "setClassProps",
     "memberof": "source/stores/UIStore.js~UIStore",
     "static": false,
     "longname": "source/stores/UIStore.js~UIStore#setClassProps",
     "access": "public",
-    "description": null,
-    "lineNumber": 13,
-    "undocument": true,
+    "description": "Function used to assign values to the members of\n this class from an external function or a react component.",
+    "lineNumber": 23,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "An array key:value pairs of class members and their values"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "self",
+        "description": "Refers to the class itself or a member which is a member."
+      }
+    ],
     "decorators": [
       {
         "name": "action",
@@ -1686,7 +1839,7 @@
     }
   },
   {
-    "__docId__": 111,
+    "__docId__": 110,
     "kind": "file",
     "name": "source/stores/index.js",
     "content": "/**\n * MobX store classes inistantiation.\n * This is where all MobX stores are instantiated\n * and exported for use within the Provider.\n */\n\nimport AppStoreClass from './AppStore';\nimport UIStoreClass from './UIStore';\nimport RestaurantStoreClass from './RestaurantStore';\n\n /**\n * AppStore - For app wide store configuration and preferences.\n * @class\n */\nconst AppStore = new AppStoreClass();\n\n /**\n * UIStore - For app wide UI configurations (e.g modals and tabs).\n * @class\n */\nconst UIStore = new UIStoreClass();\n\n /**\n * RestaurantStore - For restaurant component and related actions.\n * @class\n */\nconst RestaurantStore = new RestaurantStoreClass();\n\nexport default {\n\tAppStore,\n\tUIStore,\n\tRestaurantStore,\n};\n",
@@ -1697,7 +1850,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 112,
+    "__docId__": 111,
     "kind": "variable",
     "name": "AppStore",
     "memberof": "source/stores/index.js",
@@ -1723,7 +1876,7 @@
     "ignore": true
   },
   {
-    "__docId__": 113,
+    "__docId__": 112,
     "kind": "variable",
     "name": "UIStore",
     "memberof": "source/stores/index.js",
@@ -1749,7 +1902,7 @@
     "ignore": true
   },
   {
-    "__docId__": 114,
+    "__docId__": 113,
     "kind": "variable",
     "name": "RestaurantStore",
     "memberof": "source/stores/index.js",
@@ -1775,10 +1928,10 @@
     "ignore": true
   },
   {
-    "__docId__": 115,
+    "__docId__": 114,
     "kind": "file",
     "name": "source/utils/helpers.js",
-    "content": "import { runInAction } from 'mobx';\nimport axios from 'axios';\nimport { API_KEY } from '../../env/env';\nimport ErrorAlert from '../components/common/ErrorAlert';\n\nconst getData = url => axios.get(url, { headers: { Authorization: `Bearer ${API_KEY}` } })\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t.catch(() => ErrorAlert());\n\nconst setClassProps = (arr, self) => {\n\tarr.forEach(elem => {\n\t\tself[elem.name] = elem.value;\n\t});\n};\n\nconst runInActionUtil = (data, prop, self) => {\n\trunInAction(() => {\n\t\tself[prop] = data;\n\t});\n};\n\nconst renderIf = (condition, content) => {\n  if (condition) {\n    return content;\n  }\n  return null;\n};\n\nconst truncateString = (str, limit) => {\n  if (str.length < limit) return str;\n  return `${str.slice(0, limit + 1)}...`;\n};\n\nexport {\n\tgetData,\n\tsetClassProps,\n\trunInActionUtil,\n\trenderIf,\n\ttruncateString,\n};\n",
+    "content": "\n/**\n * General helper functions for multiple uses.\n */\n\nimport { runInAction } from 'mobx';\nimport axios from 'axios';\nimport { API_KEY } from '../../env/env';\nimport ErrorAlert from '../components/common/ErrorAlert';\n\n/**\n * Basic get method using Axio lib.\n * @param {string} url - Yelp Fusion API url with query paramsmember.\n */\nconst getData = url => axios.get(url, { headers: { Authorization: `Bearer ${API_KEY}` } })\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t.catch(() => ErrorAlert());\n\n/**\n * Function used to assign values to the members of\n * this class from an external function or a react component.\n * @param {Array} arr - An array key:value pairs of class members and their values\n * @param {Object} self - Refers to the class itself or a member which is a member.\n */\nconst setClassProps = (arr, self) => {\n\tarr.forEach(elem => {\n\t\tself[elem.name] = elem.value;\n\t});\n};\n\n/**\n * Utility for the runInAction MobX method using in assigning data to class members within asinc functions.\n * @param {any} data - data to be assigned to class member\n * @param {any} prop - class member\n * @param {Object} self - Refers to the class itself.\n */\nconst runInActionUtil = (data, prop, self) => {\n\trunInAction(() => {\n\t\tself[prop] = data;\n\t});\n};\n\n/**\n * Function for rendering components based on a condition.\n * @param {Boolean} condition - condition for rendering component\n * @param {Component} content - component to be rendered\n */\nconst renderIf = (condition, content) => {\n  if (condition) {\n    return content;\n  }\n  return null;\n};\n\n/**\n * Basic function for truncating a string\n * @param {string} str - string to be truncated\n * @param {integer} limit - word limit\n */\nconst truncateString = (str, limit) => {\n  if (str.length < limit) return str;\n  return `${str.slice(0, limit + 1)}...`;\n};\n\nexport {\n\tgetData,\n\tsetClassProps,\n\trunInActionUtil,\n\trenderIf,\n\ttruncateString,\n};\n",
     "static": true,
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/utils/helpers.js",
     "access": "public",
@@ -1786,7 +1939,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 116,
+    "__docId__": 115,
     "kind": "function",
     "name": "getData",
     "memberof": "source/utils/helpers.js",
@@ -1798,21 +1951,24 @@
     "export": true,
     "importPath": "./source/utils/helpers.js",
     "importStyle": "{getData}",
-    "description": null,
-    "lineNumber": 6,
-    "undocument": true,
+    "description": "Basic get method using Axio lib.",
+    "lineNumber": 15,
     "params": [
       {
-        "name": "url",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "Yelp Fusion API url with query paramsmember."
       }
     ],
     "return": null
   },
   {
-    "__docId__": 117,
+    "__docId__": 116,
     "kind": "function",
     "name": "setClassProps",
     "memberof": "source/utils/helpers.js",
@@ -1824,27 +1980,34 @@
     "export": true,
     "importPath": "./source/utils/helpers.js",
     "importStyle": "{setClassProps}",
-    "description": null,
-    "lineNumber": 9,
-    "undocument": true,
+    "description": "Function used to assign values to the members of\nthis class from an external function or a react component.",
+    "lineNumber": 24,
     "params": [
       {
-        "name": "arr",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "An array key:value pairs of class members and their values"
       },
       {
-        "name": "self",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "self",
+        "description": "Refers to the class itself or a member which is a member."
       }
     ],
     "return": null
   },
   {
-    "__docId__": 118,
+    "__docId__": 117,
     "kind": "function",
     "name": "runInActionUtil",
     "memberof": "source/utils/helpers.js",
@@ -1856,33 +2019,44 @@
     "export": true,
     "importPath": "./source/utils/helpers.js",
     "importStyle": "{runInActionUtil}",
-    "description": null,
-    "lineNumber": 15,
-    "undocument": true,
+    "description": "Utility for the runInAction MobX method using in assigning data to class members within asinc functions.",
+    "lineNumber": 36,
     "params": [
       {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "data",
-        "types": [
-          "*"
-        ]
+        "description": "data to be assigned to class member"
       },
       {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "prop",
-        "types": [
-          "*"
-        ]
+        "description": "class member"
       },
       {
-        "name": "self",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "self",
+        "description": "Refers to the class itself."
       }
     ],
     "return": null
   },
   {
-    "__docId__": 119,
+    "__docId__": 118,
     "kind": "function",
     "name": "renderIf",
     "memberof": "source/utils/helpers.js",
@@ -1894,21 +2068,28 @@
     "export": true,
     "importPath": "./source/utils/helpers.js",
     "importStyle": "{renderIf}",
-    "description": null,
-    "lineNumber": 21,
-    "undocument": true,
+    "description": "Function for rendering components based on a condition.",
+    "lineNumber": 47,
     "params": [
       {
-        "name": "condition",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "condition",
+        "description": "condition for rendering component"
       },
       {
-        "name": "content",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Component"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "content",
+        "description": "component to be rendered"
       }
     ],
     "return": {
@@ -1918,7 +2099,7 @@
     }
   },
   {
-    "__docId__": 120,
+    "__docId__": 119,
     "kind": "function",
     "name": "truncateString",
     "memberof": "source/utils/helpers.js",
@@ -1930,21 +2111,28 @@
     "export": true,
     "importPath": "./source/utils/helpers.js",
     "importStyle": "{truncateString}",
-    "description": null,
-    "lineNumber": 28,
-    "undocument": true,
+    "description": "Basic function for truncating a string",
+    "lineNumber": 59,
     "params": [
       {
-        "name": "str",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "str",
+        "description": "string to be truncated"
       },
       {
-        "name": "limit",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "integer"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "limit",
+        "description": "word limit"
       }
     ],
     "return": {
@@ -1955,7 +2143,7 @@
   },
   {
     "kind": "index",
-    "content": "# Digital Passport Mobile App\n\n## Genral Setup For Development\n\nClone this repository, install dependencies and start application:\n\n```bash\nnpm install -g react-native-cli@2.0.1  # Install only if you don't have react native CLI installed globally already.\ngit clone git@gitlab.dominode.com:Hypatia-Technologies/digital-passport-mobile-app.git\ncd digital-passport-mobile-app\nnpm install\n```\nCreate a folder called `env` in the project root and add the project's environment variables within `env/env.js`\n\n```bash\nnpm start # For development.\n```\n\nDependencies have been installed correctly if you get this after running the above: `Your app is running at...`\n\n### Detach From ExpoKit\n\nIn order to install native dependencies and run the application on an emulator/simulator, you need to detach the application from ExpoKit.\n\n```bash\nnpm run expo -- login # Use Dominode Expo account login credentials.\nnpm run expo -- eject\nbrew install git-lfs # Homebrew should already be installed.\ngit lfs install\nreact-native link blinkid-react-native\nreact-native link react-native-touch-id\n```\n\nWhen prompted, select: `ExpoKit: I'll create or log in with an Expo account to use React Native and the Expo SDK.`\n\n\n## Setup For iOS Development\n\n1. Open `digital-passport-mobile-app/ios` in xcode and select `Hypatia Technologies INC` as team within the project's general settings.\n\n2. Add faceID permissions into `info.plist`:\n```\n<key>NSFaceIDUsageDescription</key>\n<string>Enabling Face ID allows you quick and secure access to your account.</string>\n```\n\n3. Run the commands below in a terminal to install the application on an iOS simulator:\n\n```bash\ncd ios # From project root.\npod install\ncd ..\nreact-native run-ios\n```\n\n### Deployment using fastlane\n\n1. Install fastlane (if not already installed): \n\n```bash\nxcode-select --install\n\n# Using RubyGems\nsudo gem install fastlane -NV\n\n# Alternatively using Homebrew\nbrew cask install fastlane\n\nfastlane init # Run within `digital-passport-mobile-app/ios`\n```\n\n2. \na. Replace the files within `digital-passport-mobile-app/ios/fastlane` with those within `digital-passport-mobile-app/samples/fastlane`. Also, replace values where necessary within `Appfile`.\nb. Goto the testflight section of [appstoreconnect](https://appstoreconnect.apple.com/) and note the latest version and build number.\nc. Setup automating version and build number by going [here](https://developer.apple.com/library/archive/qa/qa1827/_index.html/) and following steps 1 and 2 within the Xcode subheading.\n\n3. Run the command below to deploy a beta build:\n\n```\nfastlane beta\n```\n\n4. Follow the steps to release the app on testflight:\na. Goto the testflight section of [appstoreconnect](https://appstoreconnect.apple.com/).\nb. Navigate to iOS Builds > deployed version (build number).\nc. click `Provide Export Compliance Information` > select `No` > click `Start Internal Testing`.\n\n\n## Setup For Android Development\n\n1. Add microblink maven repository to `digital-passport-mobile-app/android/app/build.gradle`: \n```\nallprojects {\n  repositories {\n    // don't forget to add maven and jcenter if not there already\n    mavenLocal()\n    jcenter()\n    \n    // ... other repositories your project needs\n    \n    maven { url \"http://maven.microblink.com\" }\n  }\n}\n```\n\n2. Replace the keyword `compile` with `implementation` in files `digital-passport-mobile-app/android/app/build.gradle`,  `digital-passport-mobile-app/node_modules/blinkid-react-native/src/android/build.gradle` and `digital-passport-mobile-app/node_modules/react-native-touch-id/android/build.gradle`\n\n3. Add biometrics permissions into `AndroidManifest.xml`:\n```\n<uses-permission android:name=\"android.permission.USE_FINGERPRINT\" />\n```\n\n4. Within `digital-passport-mobile-app/node_modules/blinkid-react-native/src/android/build.gradle`, replace:\n```\nimplementation \"com.facebook.react:react-native:(versionNumber)\"\n```\nwith\n```\nimplementation \"com.facebook.react:react-native:+\"\n```\n\n5. Open `digital-passport-mobile-app/android` in a android studio and allow the `gradle sync` process run to completion.\n\n6 Run the following\n\n```bash\nreact-native run-android # From project root.\n```\n",
+    "content": "",
     "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/README.md",
     "name": "./README.md",
     "static": true,
@@ -1970,7 +2158,7 @@
     "access": "public"
   },
   {
-    "__docId__": 121,
+    "__docId__": 120,
     "kind": "testFile",
     "name": "tests/stores/one.js",
     "content": "import React from 'react';\nimport { shallow } from 'enzyme';\nimport App from '../../App';\n\ndescribe('Root', () => {\n  it('should render correctly', async () => {\n    const tree = shallow(\n      <App />,\n    );\n    expect(tree).toMatchSnapshot();\n  });\n});\n",
@@ -1981,7 +2169,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 122,
+    "__docId__": 121,
     "kind": "test",
     "name": "describe0",
     "testId": 0,
@@ -1994,7 +2182,7 @@
     "lineNumber": 5
   },
   {
-    "__docId__": 123,
+    "__docId__": 122,
     "kind": "test",
     "name": "it1",
     "testId": 1,

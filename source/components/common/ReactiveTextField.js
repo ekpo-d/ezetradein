@@ -8,6 +8,11 @@ import { inject, observer } from 'mobx-react';
 import placeholders from '../../assets/styles/base/placeholders';
 import headerStyles from '../../assets/styles/components/header';
 
+/**
+ * Searchbar component which handles the display
+ * of the input field and takes in input.
+ * @type {Component}
+ */
 @inject('RestaurantStore')
 @observer
 export default class ReactiveTextField extends React.Component {

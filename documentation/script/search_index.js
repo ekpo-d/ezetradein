@@ -48,9 +48,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "./source/components/restaurant/restaurantlistscreen.js~restaurantscreen",
-    "class/source/components/restaurant/RestaurantListScreen.js~RestaurantScreen.html",
-    "<span>RestaurantScreen</span> <span class=\"search-result-import-path\">./source/components/restaurant/RestaurantListScreen.js</span>",
+    "./source/components/restaurant/restaurantlistscreen.js~restaurantlistscreen",
+    "class/source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen.html",
+    "<span>RestaurantListScreen</span> <span class=\"search-result-import-path\">./source/components/restaurant/RestaurantListScreen.js</span>",
     "class"
   ],
   [
@@ -522,21 +522,21 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "source/components/restaurant/restaurantlistscreen.js~restaurantscreen#constructor",
-    "class/source/components/restaurant/RestaurantListScreen.js~RestaurantScreen.html#instance-constructor-constructor",
-    "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#constructor",
+    "source/components/restaurant/restaurantlistscreen.js~restaurantlistscreen#constructor",
+    "class/source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen.html#instance-constructor-constructor",
+    "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen#constructor",
     "method"
   ],
   [
-    "source/components/restaurant/restaurantlistscreen.js~restaurantscreen#render",
-    "class/source/components/restaurant/RestaurantListScreen.js~RestaurantScreen.html#instance-method-render",
-    "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#render",
+    "source/components/restaurant/restaurantlistscreen.js~restaurantlistscreen#render",
+    "class/source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen.html#instance-method-render",
+    "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen#render",
     "method"
   ],
   [
-    "source/components/restaurant/restaurantlistscreen.js~restaurantscreen#renderitems",
-    "class/source/components/restaurant/RestaurantListScreen.js~RestaurantScreen.html#instance-member-renderItems",
-    "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#renderItems",
+    "source/components/restaurant/restaurantlistscreen.js~restaurantlistscreen#renderitems",
+    "class/source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen.html#instance-member-renderItems",
+    "source/components/restaurant/RestaurantListScreen.js~RestaurantListScreen#renderItems",
     "member"
   ],
   [
@@ -642,15 +642,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "source/stores/uistore.js~uistore#activemodals",
-    "class/source/stores/UIStore.js~UIStore.html#instance-member-activeModals",
-    "source/stores/UIStore.js~UIStore#activeModals",
-    "member"
-  ],
-  [
-    "source/stores/uistore.js~uistore#navigation",
-    "class/source/stores/UIStore.js~UIStore.html#instance-member-navigation",
-    "source/stores/UIStore.js~UIStore#navigation",
+    "source/stores/uistore.js~uistore#name",
+    "class/source/stores/UIStore.js~UIStore.html#instance-member-name",
+    "source/stores/UIStore.js~UIStore#name",
     "member"
   ],
   [
