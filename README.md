@@ -20,7 +20,7 @@
 * MobX
 * Axios
 * Eslint
-* Esdoc (full app wide documentation within 'documentation folder).
+* Esdoc (full app wide documentation within 'documentation' folder).
 * Jest (tests unavailable due to config/dependency issues).
 
 ## Genral Setup For Development
@@ -39,3 +39,8 @@ npm start # For development, starts up expo, eslint and jest.
 ```
 
 Dependencies have been installed correctly if you get this after running the above: `Your app is running at...`
+
+## Other useful commands
+* `npm run docs` - generates documentation
+* `npm run lint` - runs linter (eslint)
+* `npm run lint-test` runs eslint and jest simultaneously
