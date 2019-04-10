@@ -1,0 +1,2009 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "source/.external-ecmascript.js",
+    "static": true,
+    "longname": "source/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "source/assets/styles/base/global.js",
+    "content": "import { StyleSheet } from 'react-native';\nimport placeholders from './placeholders';\n\nexport default StyleSheet.create({\n  fullSize: {\n    width: '100%',\n    height: '100%',\n  },\n  fullButton: {\n    backgroundColor: placeholders.orange,\n    width: '100%',\n    paddingVertical: 15,\n    borderWidth: 1,\n    borderColor: 'transparent',\n    borderRadius: 5,\n  },\n  fullStrokeButton: {\n    backgroundColor: 'white',\n    width: '100%',\n    paddingVertical: 15,\n    borderWidth: 1,\n    borderColor: placeholders.red,\n    borderRadius: 5,\n  },\n  loading: {\n    flex: 1,\n    alignItems: 'center',\n    justifyContent: 'center',\n  },\n  bottom: {\n    width: '100%',\n    paddingHorizontal: 15,\n    position: 'absolute',\n    bottom: 10,\n  },\n  borderBottomOrange: {\n    borderBottomWidth: 1,\n    borderBottomColor: placeholders.orange,\n  },\n  blue: {\n    color: placeholders.blue,\n  },\n  white: {\n    color: placeholders.white,\n  },\n  gray: {\n    color: placeholders.gray,\n  },\n  red: {\n    color: placeholders.red,\n  },\n  green: {\n    color: placeholders.green,\n  },\n  orange: {\n    color: placeholders.orange,\n  },\n  textSmall: {\n    fontSize: 12,\n  },\n  textRight: {\n    textAlign: 'right',\n  },\n  p_xs: {\n    padding: 5,\n  },\n  p_sm: {\n    padding: 10,\n  },\n  p_h_xs: {\n    paddingHorizontal: 5,\n  },\n  p_h_sm: {\n    paddingHorizontal: 10,\n  },\n  p_h_md: {\n    paddingHorizontal: 20,\n  },\n  p_v_xs: {\n    paddingVertical: 5,\n  },\n  p_v_sm: {\n    paddingVertical: 10,\n  },\n  p_v_md: {\n    paddingVertical: 20,\n  },\n  p_t_xxs: {\n    paddingTop: 3,\n  },\n  p_t_sm: {\n    paddingTop: 10,\n  },\n  p_r_xs: {\n    paddingRight: 5,\n  },\n  p_b_sm: {\n    paddingBottom: 10,\n  },\n  p_b_md: {\n    paddingBottom: 20,\n  },\n  p_l_xs: {\n    paddingLeft: 5,\n  },\n  p_l_sm: {\n    paddingLeft: 10,\n  },\n  p_l_md: {\n    paddingLeft: 20,\n  },\n  m_r_xxs: {\n    marginRight: 3,\n  },\n  m_r_xs: {\n    marginRight: 5,\n  },\n  m_r_sm: {\n    marginRight: 10,\n  },\n  m_r_md: {\n    marginRight: 20,\n  },\n  m_r_lg: {\n    marginRight: 40,\n  },\n  m_t_lg: {\n    marginTop: 40,\n  },\n  m_t_md: {\n    marginTop: 20,\n  },\n  m_t_sm: {\n    marginTop: 10,\n  },\n  m_b_xs: {\n    marginBottom: 5,\n  },\n  m_b_sm: {\n    marginBottom: 10,\n  },\n  m_b_md: {\n    marginBottom: 20,\n  },\n  m_b_lg: {\n    marginBottom: 40,\n  },\n  m_h_xs: {\n    marginHorizontal: 5,\n  },\n  m_h_sm: {\n    marginHorizontal: 10,\n  },\n  m_h_md: {\n    marginHorizontal: 20,\n  },\n  row: {\n    flexDirection: 'row',\n  },\n  col_12: {\n    flex: 12,\n  },\n  col_11: {\n    flex: 11,\n  },\n  col_10: {\n    flex: 10,\n  },\n  col_9: {\n    flex: 9,\n  },\n  col_8: {\n    flex: 8,\n  },\n  col_7: {\n    flex: 7,\n  },\n  col_6: {\n    flex: 6,\n  },\n  col_5: {\n    flex: 5,\n  },\n  col_4: {\n    flex: 4,\n  },\n  col_3: {\n    flex: 3,\n  },\n  col_2: {\n    flex: 2,\n  },\n  col_1: {\n    flex: 1,\n  },\n});\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/assets/styles/base/global.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "source/assets/styles/base/placeholders.js",
+    "content": "export default {\n  almostBlack: '#414141',\n  darkGray: '#595959',\n  gray: '#B0B0B0',\n  lightGray: '#F4F4F4',\n  orange: '#F8A90E',\n  gold: '#F8A80B',\n};\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/assets/styles/base/placeholders.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "source/assets/styles/components/app.js",
+    "content": "import { StyleSheet } from 'react-native';\n\nexport default StyleSheet.create({\n  container: {\n    flex: 1,\n    backgroundColor: '#fff',\n  },\n});\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/assets/styles/components/app.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "source/assets/styles/components/error.js",
+    "content": "import { StyleSheet } from 'react-native';\n\nexport default StyleSheet.create({\n  errorContainer: {\n    flex: 1,\n    justifyContent: 'center',\n    alignItems: 'center',\n  },\n});\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/assets/styles/components/error.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "source/assets/styles/components/header.js",
+    "content": "import { StyleSheet } from 'react-native';\nimport placeholders from '../base/placeholders';\n\nexport default StyleSheet.create({\n  container: {\n    backgroundColor: placeholders.orange,\n    paddingHorizontal: 15,\n  },\n  headerText: {\n    color: 'white',\n    fontSize: 34,\n    right: 2,\n  },\n  icon: {\n    width: 25,\n    height: 30,\n    marginRight: 15,\n  },\n  input: {\n    backgroundColor: 'white',\n    top: 4,\n    paddingHorizontal: 5,\n    height: 25,\n    borderColor: 'white',\n    borderWidth: 1,\n    borderRadius: 10,\n  },\n});\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/assets/styles/components/header.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "source/assets/styles/components/restaurant.js",
+    "content": "import { StyleSheet } from 'react-native';\nimport globalStyles from '../base/global';\nimport placeholders from '../base/placeholders';\n\nexport default StyleSheet.create({\n  container: {\n    flex: 1,\n    backgroundColor: 'white',\n    paddingVertical: 10,\n    paddingHorizontal: 15,\n  },\n  viewWrapper: {\n    flex: 1,\n    backgroundColor: 'white',\n  },\n  card: {\n    ...globalStyles.m_b_md,\n    backgroundColor: 'white',\n    borderRadius: 5,\n    shadowColor: '#000',\n    shadowOffset: { width: 0, height: 5 },\n    shadowOpacity: 0.1,\n    shadowRadius: 5,\n  },\n  image: {\n    width: '100%',\n    height: 150,\n  },\n  title: {\n    color: placeholders.almostBlack,\n    fontSize: 18,\n    marginBottom: 4,\n  },\n  typeText: {\n    color: placeholders.darkGray,\n    fontSize: 14,\n    textAlign: 'right',\n  },\n  ratingText: {\n    ...globalStyles.m_r_sm,\n    color: placeholders.gold,\n    fontSize: 14,\n  },\n  imageContainer: {\n    flex: 1,\n    borderRadius: 5,\n    backgroundColor: 'rgba(0, 0, 0, 0.2)',\n    alignItems: 'center',\n  },\n  imageTextWrapper: {\n    ...globalStyles.p_xs,\n    backgroundColor: 'rgba(0, 0, 0, 0.4)',\n    borderRadius: 5,\n  },\n  imageText: {\n    color: 'white',\n    fontSize: 14,\n    textAlign: 'center',\n  },\n  optionsText: {\n    color: placeholders.darkGray,\n    fontSize: 12,\n    textAlign: 'center',\n  },\n  linkText: {\n    color: placeholders.darkGray,\n    fontSize: 16,\n    textAlign: 'left',\n  },\n  borderBottom: {\n    borderBottomWidth: 1,\n    borderBottomColor: placeholders.lightGray,\n  },\n  map: {\n    marginBottom: 70,\n    height: 200,\n    borderRadius: 5,\n  },\n  bottom: {\n    paddingBottom: 20,\n    backgroundColor: 'white',\n    bottom: 0,\n  },\n  bottomText: {\n    textAlign: 'center',\n    color: placeholders.gold,\n  },\n});\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/assets/styles/components/restaurant.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "source/components/app/AppContainer.js",
+    "content": "import { createAppContainer, createStackNavigator } from 'react-navigation';\n\nimport RestaurantListScreen from '../restaurant/RestaurantListScreen';\nimport RestaurantScreen from '../restaurant/RestaurantScreen';\nimport Header from '../common/Header';\n\nconst AppNavigator = createStackNavigator(\n  {\n    RestaurantList: {\n      screen: RestaurantListScreen,\n      navigationOptions: () => ({\n        header: Header,\n      }),\n    },\n    Restaurant: RestaurantScreen,\n  },\n  {\n    initialRouteName: 'RestaurantList',\n  },\n);\n\nconst AppContainer = createAppContainer(AppNavigator);\n\nexport default AppContainer;\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/app/AppContainer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "AppNavigator",
+    "memberof": "source/components/app/AppContainer.js",
+    "static": true,
+    "longname": "source/components/app/AppContainer.js~AppNavigator",
+    "access": "public",
+    "export": false,
+    "importPath": "./source/components/app/AppContainer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "AppContainer",
+    "memberof": "source/components/app/AppContainer.js",
+    "static": true,
+    "longname": "source/components/app/AppContainer.js~AppContainer",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/app/AppContainer.js",
+    "importStyle": "AppContainer",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "source/components/common/ErrorAlert.js",
+    "content": "import {\n  Alert,\n} from 'react-native';\n\nconst ErrorAlert = (\n  title = 'Error',\n  message = 'Something Went Wrong. Please try Again Later',\n) => {\n  Alert.alert(\n    title,\n    message,\n    [{ text: 'OK' }],\n    { cancelable: false },\n  );\n};\n\nexport default ErrorAlert;\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/ErrorAlert.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "ErrorAlert",
+    "memberof": "source/components/common/ErrorAlert.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/common/ErrorAlert.js~ErrorAlert",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/common/ErrorAlert.js",
+    "importStyle": "ErrorAlert",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "title",
+        "optional": true,
+        "types": [
+          "string"
+        ],
+        "defaultRaw": "Error",
+        "defaultValue": "Error"
+      },
+      {
+        "name": "message",
+        "optional": true,
+        "types": [
+          "string"
+        ],
+        "defaultRaw": "Something Went Wrong. Please try Again Later",
+        "defaultValue": "Something Went Wrong. Please try Again Later"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "source/components/common/Header.js",
+    "content": "import React from 'react';\nimport {\n  SafeAreaView,\n  View,\n  Image,\n  TouchableOpacity,\n} from 'react-native';\nimport { toJS } from 'mobx';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport { Ionicons } from '@expo/vector-icons';\n\nimport Stores from '../../stores/index';\nimport SourceSansProText from './StyledText';\n\nimport headerStyles from '../../assets/styles/components/header';\nimport globalStyles from '../../assets/styles/base/global';\nimport ReactiveTextField from './ReactiveTextField';\n\nconst Header = () => (\n  <SafeAreaView style={headerStyles.container}>\n    <View style={[globalStyles.row, globalStyles.m_t_sm, globalStyles.m_b_xs]}>\n      <View style={globalStyles.col_1}>\n        <Ionicons\n          name=\"md-arrow-back\"\n          size={30}\n          color=\"white\"\n        />\n      </View>\n      <View style={globalStyles.col_6}>\n        <ReactiveTextField />\n      </View>\n      <View style={[globalStyles.col_3, { flexDirection: 'row-reverse' }]}>\n        <Image\n          source={require('../../assets/images/icons/settings.png')}\n          resizeMode=\"contain\"\n          style={headerStyles.icon}\n        />\n        <TouchableOpacity\n          onPress={() => {\n            if (Stores.RestaurantStore.searchString.trim().length) {\n              Stores.RestaurantStore.getRestaurants(\n                'load',\n                toJS(Stores.RestaurantStore.searchString),\n              );\n            }\n            else {\n              Stores.RestaurantStore.setClassProps([\n                {\n                  name: 'showSearchbar',\n                  value: !Stores.RestaurantStore.showSearchbar,\n                },\n              ]);\n              // eslint-disable-next-line no-unused-expressions\n              Stores.RestaurantStore.showSearchbar\n              ? Stores.RestaurantStore.searchbarRef.focus()\n              : null;\n            }\n          }}\n        >\n          <Ionicons\n            name=\"md-search\"\n            size={30}\n            color=\"white\"\n            style={{ marginRight: 30 }}\n          />\n        </TouchableOpacity>\n      </View>\n    </View>\n    <View style={globalStyles.m_b_xs}>\n      <SourceSansProText type=\"SourceSansProBold\" style={headerStyles.headerText}>\n        Restaurants\n      </SourceSansProText>\n    </View>\n  </SafeAreaView>\n);\n\nexport default Header;\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/Header.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "Header",
+    "memberof": "source/components/common/Header.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/common/Header.js~Header",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/common/Header.js",
+    "importStyle": "Header",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "source/components/common/LoadingScreen.js",
+    "content": "import React from 'react';\nimport {\n  View,\n  Dimensions,\n} from 'react-native';\nimport { Svg } from 'expo';\nimport SvgAnimatedLinearGradient from 'react-native-svg-animated-linear-gradient';\nimport globalStyles from '../../assets/styles/base/global';\n\nconst { width } = Dimensions.get('window');\nconst blockWidth = width - 30;\n\nconst LoadingScreen = () => (\n  <View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n    <View style={globalStyles.m_b_sm}>\n      <SvgAnimatedLinearGradient height={200} width={blockWidth}>\n        <Svg.Rect x=\"0\" y=\"0\" rx=\"5\" ry=\"5\" width=\"100%\" height=\"200\" />\n      </SvgAnimatedLinearGradient>\n    </View>\n  </View>\n);\n\nexport default LoadingScreen;\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/LoadingScreen.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "width",
+    "memberof": "source/components/common/LoadingScreen.js",
+    "static": true,
+    "longname": "source/components/common/LoadingScreen.js~width",
+    "access": "public",
+    "export": false,
+    "importPath": "./source/components/common/LoadingScreen.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "blockWidth",
+    "memberof": "source/components/common/LoadingScreen.js",
+    "static": true,
+    "longname": "source/components/common/LoadingScreen.js~blockWidth",
+    "access": "public",
+    "export": false,
+    "importPath": "./source/components/common/LoadingScreen.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "LoadingScreen",
+    "memberof": "source/components/common/LoadingScreen.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/common/LoadingScreen.js~LoadingScreen",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/common/LoadingScreen.js",
+    "importStyle": "LoadingScreen",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "source/components/common/ReactiveTextField.js",
+    "content": "import React from 'react';\nimport {\n  View,\n} from 'react-native';\nimport { TextField } from 'react-native-material-textfield';\nimport { inject, observer } from 'mobx-react';\n\nimport placeholders from '../../assets/styles/base/placeholders';\nimport headerStyles from '../../assets/styles/components/header';\n\n@inject('RestaurantStore')\n@observer\nexport default class ReactiveTextField extends React.Component {\n  render() {\n    return (\n      <View style={{\n          display: this.props.RestaurantStore.showSearchbar\n          ? 'flex'\n          : 'none',\n        }}\n      >\n        <TextField\n          style={headerStyles.input}\n          ref={input => {\n            if (input != null) {\n              this.props.RestaurantStore.setClassProps([\n                {\n                  name: 'searchbarRef',\n                  value: input,\n                },\n              ]);\n            }\n          }}\n          label=\"\"\n          textColor={placeholders.darkGray}\n          tintColor={placeholders.darkGray}\n          fontSize={14}\n          labelHeight={0}\n          lineWidth={0}\n          activeLineWidth={0}\n          keyboardType=\"default\"\n          autoCapitalize=\"none\"\n          autoCorrect={false}\n          returnKeyType=\"done\"\n          enablesReturnKeyAutomatically\n          value={this.props.RestaurantStore.searchString}\n          onChangeText={searchString => {\n            this.props.RestaurantStore.setClassProps([\n              {\n                name: 'searchString',\n                value: searchString,\n              },\n            ]);\n          }}\n        />\n      </View>\n    );\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/ReactiveTextField.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "class",
+    "name": "ReactiveTextField",
+    "memberof": "source/components/common/ReactiveTextField.js",
+    "static": true,
+    "longname": "source/components/common/ReactiveTextField.js~ReactiveTextField",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/common/ReactiveTextField.js",
+    "importStyle": "ReactiveTextField",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "inject",
+        "arguments": "('RestaurantStore')"
+      },
+      {
+        "name": "observer",
+        "arguments": null
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "render",
+    "memberof": "source/components/common/ReactiveTextField.js~ReactiveTextField",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/common/ReactiveTextField.js~ReactiveTextField#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "source/components/common/StyledText.js",
+    "content": "import React from 'react';\nimport { Text } from 'react-native';\n\nconst SourceSansProText = props => (\n  <Text\n    {...props}\n    style={[\n      props.style,\n      {\n        fontFamily: props.type || 'SourceSansPro',\n        fontSize: props.size || props.style.fontSize,\n      },\n    ]}\n  />\n);\n\nexport default SourceSansProText;\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/common/StyledText.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "SourceSansProText",
+    "memberof": "source/components/common/StyledText.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/common/StyledText.js~SourceSansProText",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/common/StyledText.js",
+    "importStyle": "SourceSansProText",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "props",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 70,
+    "kind": "file",
+    "name": "source/components/error/ErrorBoundary.js",
+    "content": "/* eslint-disable no-undef */\n\nimport React from 'react';\nimport { View } from 'react-native';\nimport ErrorAlert from '../common/ErrorAlert';\n\nexport default class ErrorBoundary extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      error: false,\n    };\n  }\n\n  componentDidCatch() {\n    this.setState({\n      error: true,\n    });\n  }\n\n  render() {\n    if (this.state.error) {\n      ErrorAlert();\n      return (\n        <View />\n      );\n    }\n    return this.props.children;\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/error/ErrorBoundary.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 71,
+    "kind": "class",
+    "name": "ErrorBoundary",
+    "memberof": "source/components/error/ErrorBoundary.js",
+    "static": true,
+    "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/error/ErrorBoundary.js",
+    "importStyle": "ErrorBoundary",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 72,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "source/components/error/ErrorBoundary.js~ErrorBoundary",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "member",
+    "name": "state",
+    "memberof": "source/components/error/ErrorBoundary.js~ErrorBoundary",
+    "static": false,
+    "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"error\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "method",
+    "name": "componentDidCatch",
+    "memberof": "source/components/error/ErrorBoundary.js~ErrorBoundary",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary#componentDidCatch",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "render",
+    "memberof": "source/components/error/ErrorBoundary.js~ErrorBoundary",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/error/ErrorBoundary.js~ErrorBoundary#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "source/components/restaurant/RestaurantListItem.js",
+    "content": "/* eslint-disable react/no-array-index-key */\n\nimport React from 'react';\nimport {\n  View,\n  ImageBackground,\n} from 'react-native';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport { Ionicons } from '@expo/vector-icons';\n\nimport { truncateString } from '../../utils/helpers';\nimport SourceSansProText from '../common/StyledText';\nimport placeholders from '../../assets/styles/base/placeholders';\n\nimport globalStyles from '../../assets/styles/base/global';\nimport restaurantStyles from '../../assets/styles/components/restaurant';\n\nconst RestaurantItem = props => (\n  <View style={restaurantStyles.card}>\n    <ImageBackground\n      source={{ uri: props.restaurant.image_url }}\n      imageStyle={{ borderRadius: 5 }}\n      style={restaurantStyles.image}\n    >\n      <View style={restaurantStyles.imageContainer}>\n        <View style={[globalStyles.row, globalStyles.p_h_md, globalStyles.p_v_sm]}>\n          <View style={globalStyles.col_2}>\n            <View style={restaurantStyles.imageTextWrapper}>\n              <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.imageText}>\n                1.6 km\n              </SourceSansProText>\n            </View>\n          </View>\n          <View style={[globalStyles.col_10, { flexDirection: 'row-reverse' }]}>\n            <Ionicons\n              name=\"md-heart-empty\"\n              size={25}\n              color=\"white\"\n            />\n          </View>\n        </View>\n      </View>\n    </ImageBackground>\n    <View style={[globalStyles.p_v_sm, globalStyles.p_h_md]}>\n      <View style={[globalStyles.row, { alignItems: 'center' }]}>\n        <View style={globalStyles.col_8}>\n          <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.title}>\n            {props.restaurant.name}\n          </SourceSansProText>\n        </View>\n        <View style={globalStyles.col_4}>\n          <SourceSansProText style={restaurantStyles.typeText}>\n            {truncateString(props.restaurant.categories[0].title.toUpperCase(), 8)}\n          </SourceSansProText>\n        </View>\n      </View>\n      <View style={[globalStyles.row, { alignItems: 'center' }]}>\n        <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.ratingText}>\n          {props.restaurant.rating}\n        </SourceSansProText>\n        {\n          Array(Math.round(props.restaurant.rating))\n            .fill(Math.round(props.restaurant.rating))\n            .map((elem, index) => (\n              <Ionicons\n                key={`rating-${index}`}\n                name=\"md-star\"\n                size={11}\n                color={placeholders.gold}\n                style={globalStyles.m_r_xs}\n              />\n            ))\n        }\n      </View>\n    </View>\n  </View>\n);\n\nexport default RestaurantItem;\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/restaurant/RestaurantListItem.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "RestaurantItem",
+    "memberof": "source/components/restaurant/RestaurantListItem.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/components/restaurant/RestaurantListItem.js~RestaurantItem",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/restaurant/RestaurantListItem.js",
+    "importStyle": "RestaurantItem",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "props",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "source/components/restaurant/RestaurantListScreen.js",
+    "content": "import React from 'react';\nimport {\n  ScrollView,\n  View,\n  FlatList,\n  TouchableOpacity,\n} from 'react-native';\nimport { toJS } from 'mobx';\nimport { inject, observer } from 'mobx-react';\nimport RestaurantListItem from './RestaurantListItem';\nimport { renderIf } from '../../utils/helpers';\n\nimport restaurantStyles from '../../assets/styles/components/restaurant';\nimport LoadingScreen from '../common/LoadingScreen';\n\n@inject('RestaurantStore')\n@observer\nexport default class RestaurantScreen extends React.Component {\n\tconstructor(props) {\n    super(props);\n    props.RestaurantStore.getRestaurants();\n  }\n\n  renderItems = props => (\n    <TouchableOpacity\n      key={props.item.id}\n      onPress={() => this.props.navigation.navigate('Restaurant', { data: toJS(props.item) })}\n    >\n      <RestaurantListItem restaurant={props.item} />\n    </TouchableOpacity>\n  )\n\n  render() {\n    return (\n      <View style={{ flex: 1 }}>\n        {\n          renderIf(\n            this.props.RestaurantStore.loading,\n            <ScrollView style={restaurantStyles.container}>\n              <LoadingScreen />\n            </ScrollView>,\n          )\n        }\n        {\n          renderIf(\n            !this.props.RestaurantStore.loading,\n            (\n              <FlatList\n                style={restaurantStyles.container}\n                data={toJS(this.props.RestaurantStore.restaurants)}\n                renderItem={this.renderItems}\n                keyExtractor={item => item.id}\n                refreshing={this.props.RestaurantStore.refreshing}\n                onRefresh={() => this.props.RestaurantStore.getRestaurants('refresh')}\n                onEndReached={this.props.RestaurantStore.onEndReached}\n                onEndReachedThreshold={0.4}\n                initialNumToRender={10}\n              />\n            ),\n          )\n        }\n\n      </View>\n    );\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/restaurant/RestaurantListScreen.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "class",
+    "name": "RestaurantScreen",
+    "memberof": "source/components/restaurant/RestaurantListScreen.js",
+    "static": true,
+    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/restaurant/RestaurantListScreen.js",
+    "importStyle": "RestaurantScreen",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "inject",
+        "arguments": "('RestaurantStore')"
+      },
+      {
+        "name": "observer",
+        "arguments": null
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 80,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "member",
+    "name": "renderItems",
+    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen",
+    "static": false,
+    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#renderItems",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "render",
+    "memberof": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/restaurant/RestaurantListScreen.js~RestaurantScreen#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "source/components/restaurant/RestaurantScreen.js",
+    "content": "/* eslint-disable react/no-array-index-key */\n\nimport React from 'react';\nimport {\n  View,\n  ScrollView,\n  ImageBackground,\n  TouchableOpacity,\n  Image,\n  Linking,\n} from 'react-native';\nimport { MapView } from 'expo';\n\n// eslint-disable-next-line import/no-extraneous-dependencies\nimport {\n  Ionicons,\n  MaterialIcons,\n  EvilIcons,\n  FontAwesome5,\n} from '@expo/vector-icons';\n\nimport { truncateString } from '../../utils/helpers';\nimport SourceSansProText from '../common/StyledText';\nimport ErrorAlert from '../common/ErrorAlert';\nimport placeholders from '../../assets/styles/base/placeholders';\n\nimport globalStyles from '../../assets/styles/base/global';\nimport restaurantStyles from '../../assets/styles/components/restaurant';\n\nconst LATITUDE_DELTA = 0.15;\nconst LONGITUDE_DELTA = 0.15;\n\nexport default class RestaurantScreen extends React.Component {\n  static navigationOptions = {\n    header: null,\n  };\n\n  render() {\n    const restaurant = this.props.navigation.getParam('data');\n    return (\n      <View style={restaurantStyles.viewWrapper}>\n        <ScrollView>\n          <ImageBackground\n            source={{ uri: restaurant.image_url }}\n            style={[\n              restaurantStyles.image,\n              { height: 300, borderRadius: 0 },\n            ]}\n          >\n            <View style={restaurantStyles.imageContainer}>\n              <View style={[globalStyles.row, globalStyles.m_t_lg, globalStyles.m_h_md]}>\n                <View style={globalStyles.col_2}>\n                  <TouchableOpacity\n                    onPress={() => this.props.navigation.navigate('RestaurantList')}\n                  >\n                    <Ionicons\n                      name=\"md-arrow-back\"\n                      size={30}\n                      color=\"white\"\n                    />\n                  </TouchableOpacity>\n                </View>\n                <View style={[globalStyles.col_10, { flexDirection: 'row-reverse' }]}>\n                  <Ionicons\n                    name=\"md-heart-empty\"\n                    size={30}\n                    color=\"white\"\n                  />\n                </View>\n              </View>\n            </View>\n          </ImageBackground>\n          <View style={[globalStyles.p_v_sm, { paddingHorizontal: 15 }]}>\n            <View style={[globalStyles.row, globalStyles.p_t_xs, globalStyles.p_b_sm, { alignItems: 'center' }, restaurantStyles.borderBottom]}>\n              <View style={globalStyles.col_3}>\n                <Image\n                  source={require('../../assets/images/placeholders/pizzaLogo.jpg')}\n                  resizeMode=\"contain\"\n                  style={{ width: 70, height: 70 }}\n                />\n              </View>\n              <View style={globalStyles.col_7}>\n                <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.title}>\n                  {restaurant.name}\n                </SourceSansProText>\n                <View style={[globalStyles.row, { alignItems: 'center' }]}>\n                  <SourceSansProText type=\"SourceSansProSemiBold\" style={restaurantStyles.ratingText}>\n                    {restaurant.rating}\n                  </SourceSansProText>\n                  {\n                    Array(Math.round(restaurant.rating))\n                      .fill(Math.round(restaurant.rating))\n                      .map((elem, index) => (\n                        <Ionicons\n                          key={`rating-${index}`}\n                          name=\"md-star\"\n                          size={11}\n                          color={placeholders.gold}\n                          style={globalStyles.m_r_xs}\n                        />\n                      ))\n                  }\n                  <SourceSansProText style={[{ marginLeft: 7 }, globalStyles.m_r_sm]}>\n                    •\n                  </SourceSansProText>\n                  <SourceSansProText style={{ color: placeholders.darkGray }}>\n                    {truncateString(restaurant.categories[0].title, 8)}\n                  </SourceSansProText>\n                </View>\n              </View>\n              <View style={globalStyles.col_2}>\n                <View style={[\n                    restaurantStyles.imageTextWrapper,\n                    { backgroundColor: placeholders.gold },\n                  ]}\n                >\n                  <SourceSansProText\n                    type=\"SourceSansProSemiBold\"\n                    style={[restaurantStyles.imageText, { fontSize: 90 }]}\n                  >\n                    1.6 km\n                  </SourceSansProText>\n                </View>\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_sm, { alignItems: 'center' }, restaurantStyles.borderBottom]}>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(`tel:${restaurant.phone}`)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <Ionicons\n                  name=\"md-call\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Call\n                </SourceSansProText>\n              </TouchableOpacity>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(restaurant.url)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <Ionicons\n                  name=\"md-globe\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Website\n                </SourceSansProText>\n              </TouchableOpacity>\n              <TouchableOpacity\n                onPress={() => {\n                  Linking.openURL(`maps://maps.google.com/maps?daddr=${restaurant.coordinates.latitude},${restaurant.coordinates.latitude}&amp;ll=`)\n                    .catch(() => ErrorAlert());\n                }}\n                style={[globalStyles.col_3, { alignItems: 'center' }]}\n              >\n                <MaterialIcons\n                  name=\"directions\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Directions\n                </SourceSansProText>\n              </TouchableOpacity>\n              <View style={[globalStyles.col_3, { alignItems: 'center' }]}>\n                <Ionicons\n                  name=\"md-chatbubbles\"\n                  size={25}\n                  color={placeholders.darkGray}\n                />\n                <SourceSansProText style={restaurantStyles.optionsText}>\n                  Invite\n                </SourceSansProText>\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <Image\n                  source={require('../../assets/images/icons/opentable.png')}\n                  resizeMode=\"contain\"\n                  style={{ width: 25, height: 25 }}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Book a table with Opentable\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"chevron-right\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <Image\n                  source={require('../../assets/images/icons/uber.png')}\n                  resizeMode=\"contain\"\n                  style={{ width: 25, height: 25 }}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Request a ride with Uber\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"chevron-right\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <EvilIcons\n                  name=\"clock\"\n                  size={30}\n                  color={placeholders.darkGray}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Open Now (07-24h)\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <MaterialIcons\n                  name=\"keyboard-arrow-down\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <View style={[globalStyles.row, globalStyles.p_v_md, restaurantStyles.borderBottom]}>\n              <View style={[globalStyles.col_2, { alignItems: 'center' }]}>\n                <FontAwesome5\n                  name=\"book-reader\"\n                  size={20}\n                  color={placeholders.darkGray}\n                />\n              </View>\n              <View style={globalStyles.col_9}>\n                <SourceSansProText size={16} style={restaurantStyles.linkText}>\n                  Menu\n                </SourceSansProText>\n              </View>\n              <View style={globalStyles.col_1}>\n                <Ionicons\n                  name=\"md-link\"\n                  size={25}\n                  color={placeholders.gray}\n                />\n              </View>\n            </View>\n\n            <MapView.Animated\n              style={restaurantStyles.map}\n              provider={MapView.PROVIDER_GOOGLE}\n              initialRegion={new MapView.AnimatedRegion({\n                latitude: restaurant.coordinates.latitude,\n                longitude: restaurant.coordinates.longitude,\n                latitudeDelta: LATITUDE_DELTA,\n                longitudeDelta: LONGITUDE_DELTA,\n              })}\n              region={new MapView.AnimatedRegion({\n                latitude: restaurant.coordinates.latitude,\n                longitude: restaurant.coordinates.longitude,\n                latitudeDelta: LATITUDE_DELTA,\n                longitudeDelta: LONGITUDE_DELTA,\n              })}\n            >\n              <MapView.Marker\n                coordinate={{\n                  latitude: restaurant.coordinates.latitude,\n                  longitude: restaurant.coordinates.longitude,\n                }}\n                title={restaurant.name}\n              />\n            </MapView.Animated>\n\n          </View>\n        </ScrollView>\n        <View style={[\n            globalStyles.bottom,\n            globalStyles.p_v_sm,\n            restaurantStyles.bottom,\n          ]}\n        >\n          <SourceSansProText size={16} style={restaurantStyles.bottomText}>\n            VIEW OFFERS\n          </SourceSansProText>\n        </View>\n      </View>\n    );\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/components/restaurant/RestaurantScreen.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "variable",
+    "name": "LATITUDE_DELTA",
+    "memberof": "source/components/restaurant/RestaurantScreen.js",
+    "static": true,
+    "longname": "source/components/restaurant/RestaurantScreen.js~LATITUDE_DELTA",
+    "access": "public",
+    "export": false,
+    "importPath": "./source/components/restaurant/RestaurantScreen.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "variable",
+    "name": "LONGITUDE_DELTA",
+    "memberof": "source/components/restaurant/RestaurantScreen.js",
+    "static": true,
+    "longname": "source/components/restaurant/RestaurantScreen.js~LONGITUDE_DELTA",
+    "access": "public",
+    "export": false,
+    "importPath": "./source/components/restaurant/RestaurantScreen.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "class",
+    "name": "RestaurantScreen",
+    "memberof": "source/components/restaurant/RestaurantScreen.js",
+    "static": true,
+    "longname": "source/components/restaurant/RestaurantScreen.js~RestaurantScreen",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/components/restaurant/RestaurantScreen.js",
+    "importStyle": "RestaurantScreen",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 87,
+    "kind": "member",
+    "name": "navigationOptions",
+    "memberof": "source/components/restaurant/RestaurantScreen.js~RestaurantScreen",
+    "static": true,
+    "longname": "source/components/restaurant/RestaurantScreen.js~RestaurantScreen.navigationOptions",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "method",
+    "name": "render",
+    "memberof": "source/components/restaurant/RestaurantScreen.js~RestaurantScreen",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "source/components/restaurant/RestaurantScreen.js~RestaurantScreen#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "source/stores/AppStore.js",
+    "content": "import { configure, observable, action } from 'mobx';\nimport { setClassProps } from '../utils/helpers';\n\nconfigure({ computedRequiresReaction: 'strict' });\n\n/**\n * MobX store class.\n * This creates the base store for the app.\n * It containes configuration for all stores and app wide preferences.\n * @class\n */\nexport default class AppStore {\n\t/**\n\t * name - Dummy Varaible\n\t * @var\n\t */\n\t@observable name = 'AppStore';\n\n\t/**\n\t * setClassProps - Used to assign values to the members of\n\t *  this class from an external function or a react component.\n\t * @param {Array} arr - An array key:value pairs of class members and their values\n\t * @param {Object} self - Refers to the class itself or a member which is a member.\n\t */\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n}\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/stores/AppStore.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "class",
+    "name": "AppStore",
+    "memberof": "source/stores/AppStore.js",
+    "static": true,
+    "longname": "source/stores/AppStore.js~AppStore",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/stores/AppStore.js",
+    "importStyle": "AppStore",
+    "description": "MobX store class.\nThis creates the base store for the app.\nIt containes configuration for all stores and app wide preferences.",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": ""
+      }
+    ],
+    "interface": false
+  },
+  {
+    "__docId__": 91,
+    "kind": "member",
+    "name": "name",
+    "memberof": "source/stores/AppStore.js~AppStore",
+    "static": false,
+    "longname": "source/stores/AppStore.js~AppStore#name",
+    "access": "public",
+    "description": "name - Dummy Varaible",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@var",
+        "tagValue": ""
+      }
+    ],
+    "decorators": [
+      {
+        "name": "observable",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "member",
+    "name": "setClassProps",
+    "memberof": "source/stores/AppStore.js~AppStore",
+    "static": false,
+    "longname": "source/stores/AppStore.js~AppStore#setClassProps",
+    "access": "public",
+    "description": "setClassProps - Used to assign values to the members of\n this class from an external function or a react component.",
+    "lineNumber": 26,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "An array key:value pairs of class members and their values"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "self",
+        "description": "Refers to the class itself or a member which is a member."
+      }
+    ],
+    "decorators": [
+      {
+        "name": "action",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "source/stores/RestaurantStore.js",
+    "content": "import { observable, action, toJS } from 'mobx';\nimport {\n\tsetClassProps,\n\trunInActionUtil,\n\tgetData,\n} from '../utils/helpers';\n\nexport default class RestaurantStore {\n\tsearchbarRef = '';\n\n\t@observable loading = false;\n\n\t@observable refreshing = false;\n\n\t@observable restaurants = [];\n\n\t@observable showSearchbar = false;\n\n\t@observable searchString = '';\n\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n\n\t@action\n\tgetRestaurants = (type = 'load', location = 'NYC') => {\n\t\tif (type === 'load') this.loading = true;\n\t\telse this.refreshing = true;\n\t\tgetData(`https://api.yelp.com/v3/businesses/search?location=${location}&term=restaurant&limit=20`)\n\t\t\t.then(result => {\n\t\t\t\trunInActionUtil(result.data.businesses, 'restaurants', this);\n\t\t\t\tif (type === 'load') runInActionUtil(false, 'loading', this);\n\t\t\t\telse runInActionUtil(false, 'refreshing', this);\n\t\t\t});\n\t};\n\n\t@action\n\tonEndReached = () => {\n\t\tconst offset = toJS(this.restaurants).length;\n\t\tconst location = this.searchString || 'NYC';\n\t\tgetData(`https://api.yelp.com/v3/businesses/search?location=${location}&term=restaurant&limit=20&offset=${offset}`)\n\t\t\t.then(result => {\n\t\t\t\trunInActionUtil(\n\t\t\t\t\ttoJS(this.restaurants).concat(result.data.businesses),\n\t\t\t\t\t'restaurants',\n\t\t\t\t\tthis,\n\t\t\t\t);\n\t\t\t});\n\t};\n}\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/stores/RestaurantStore.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "class",
+    "name": "RestaurantStore",
+    "memberof": "source/stores/RestaurantStore.js",
+    "static": true,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/stores/RestaurantStore.js",
+    "importStyle": "RestaurantStore",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 95,
+    "kind": "member",
+    "name": "searchbarRef",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#searchbarRef",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "member",
+    "name": "loading",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#loading",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "observable",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "member",
+    "name": "refreshing",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#refreshing",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "observable",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "member",
+    "name": "restaurants",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#restaurants",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "observable",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "member",
+    "name": "showSearchbar",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#showSearchbar",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "observable",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "member",
+    "name": "searchString",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#searchString",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "observable",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "member",
+    "name": "setClassProps",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#setClassProps",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "action",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "member",
+    "name": "getRestaurants",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#getRestaurants",
+    "access": "public",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "action",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "member",
+    "name": "onEndReached",
+    "memberof": "source/stores/RestaurantStore.js~RestaurantStore",
+    "static": false,
+    "longname": "source/stores/RestaurantStore.js~RestaurantStore#onEndReached",
+    "access": "public",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "action",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 106,
+    "kind": "file",
+    "name": "source/stores/UIStore.js",
+    "content": "import { observable, action } from 'mobx';\nimport { setClassProps } from '../utils/helpers';\n\nexport default class UIStore {\n\tnavigation = '';\n\n\t@observable activeModals = {\n\t\topen: false,\n\t\ttype: 'loading',\n\t};\n\n\t@action\n\tsetClassProps = (arr, self = this) => setClassProps(arr, self);\n}\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/stores/UIStore.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 107,
+    "kind": "class",
+    "name": "UIStore",
+    "memberof": "source/stores/UIStore.js",
+    "static": true,
+    "longname": "source/stores/UIStore.js~UIStore",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/stores/UIStore.js",
+    "importStyle": "UIStore",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 108,
+    "kind": "member",
+    "name": "navigation",
+    "memberof": "source/stores/UIStore.js~UIStore",
+    "static": false,
+    "longname": "source/stores/UIStore.js~UIStore#navigation",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "member",
+    "name": "activeModals",
+    "memberof": "source/stores/UIStore.js~UIStore",
+    "static": false,
+    "longname": "source/stores/UIStore.js~UIStore#activeModals",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "observable",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "member",
+    "name": "setClassProps",
+    "memberof": "source/stores/UIStore.js~UIStore",
+    "static": false,
+    "longname": "source/stores/UIStore.js~UIStore#setClassProps",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "decorators": [
+      {
+        "name": "action",
+        "arguments": null
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 111,
+    "kind": "file",
+    "name": "source/stores/index.js",
+    "content": "/**\n * MobX store classes inistantiation.\n * This is where all MobX stores are instantiated\n * and exported for use within the Provider.\n */\n\nimport AppStoreClass from './AppStore';\nimport UIStoreClass from './UIStore';\nimport RestaurantStoreClass from './RestaurantStore';\n\n /**\n * AppStore - For app wide store configuration and preferences.\n * @class\n */\nconst AppStore = new AppStoreClass();\n\n /**\n * UIStore - For app wide UI configurations (e.g modals and tabs).\n * @class\n */\nconst UIStore = new UIStoreClass();\n\n /**\n * RestaurantStore - For restaurant component and related actions.\n * @class\n */\nconst RestaurantStore = new RestaurantStoreClass();\n\nexport default {\n\tAppStore,\n\tUIStore,\n\tRestaurantStore,\n};\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/stores/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 112,
+    "kind": "variable",
+    "name": "AppStore",
+    "memberof": "source/stores/index.js",
+    "static": true,
+    "longname": "source/stores/index.js~AppStore",
+    "access": "public",
+    "export": false,
+    "importPath": "./source/stores/index.js",
+    "importStyle": null,
+    "description": "AppStore - For app wide store configuration and preferences.",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": ""
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "variable",
+    "name": "UIStore",
+    "memberof": "source/stores/index.js",
+    "static": true,
+    "longname": "source/stores/index.js~UIStore",
+    "access": "public",
+    "export": false,
+    "importPath": "./source/stores/index.js",
+    "importStyle": null,
+    "description": "UIStore - For app wide UI configurations (e.g modals and tabs).",
+    "lineNumber": 21,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": ""
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "variable",
+    "name": "RestaurantStore",
+    "memberof": "source/stores/index.js",
+    "static": true,
+    "longname": "source/stores/index.js~RestaurantStore",
+    "access": "public",
+    "export": false,
+    "importPath": "./source/stores/index.js",
+    "importStyle": null,
+    "description": "RestaurantStore - For restaurant component and related actions.",
+    "lineNumber": 27,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": ""
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "file",
+    "name": "source/utils/helpers.js",
+    "content": "import { runInAction } from 'mobx';\nimport axios from 'axios';\nimport { API_KEY } from '../../env/env';\nimport ErrorAlert from '../components/common/ErrorAlert';\n\nconst getData = url => axios.get(url, { headers: { Authorization: `Bearer ${API_KEY}` } })\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t.catch(() => ErrorAlert());\n\nconst setClassProps = (arr, self) => {\n\tarr.forEach(elem => {\n\t\tself[elem.name] = elem.value;\n\t});\n};\n\nconst runInActionUtil = (data, prop, self) => {\n\trunInAction(() => {\n\t\tself[prop] = data;\n\t});\n};\n\nconst renderIf = (condition, content) => {\n  if (condition) {\n    return content;\n  }\n  return null;\n};\n\nconst truncateString = (str, limit) => {\n  if (str.length < limit) return str;\n  return `${str.slice(0, limit + 1)}...`;\n};\n\nexport {\n\tgetData,\n\tsetClassProps,\n\trunInActionUtil,\n\trenderIf,\n\ttruncateString,\n};\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/source/utils/helpers.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "getData",
+    "memberof": "source/utils/helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/helpers.js~getData",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/utils/helpers.js",
+    "importStyle": "{getData}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "url",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 117,
+    "kind": "function",
+    "name": "setClassProps",
+    "memberof": "source/utils/helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/helpers.js~setClassProps",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/utils/helpers.js",
+    "importStyle": "{setClassProps}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "arr",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "self",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "runInActionUtil",
+    "memberof": "source/utils/helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/helpers.js~runInActionUtil",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/utils/helpers.js",
+    "importStyle": "{runInActionUtil}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "prop",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "self",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "renderIf",
+    "memberof": "source/utils/helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/helpers.js~renderIf",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/utils/helpers.js",
+    "importStyle": "{renderIf}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "condition",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "content",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "function",
+    "name": "truncateString",
+    "memberof": "source/utils/helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "source/utils/helpers.js~truncateString",
+    "access": "public",
+    "export": true,
+    "importPath": "./source/utils/helpers.js",
+    "importStyle": "{truncateString}",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "limit",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# Digital Passport Mobile App\n\n## Genral Setup For Development\n\nClone this repository, install dependencies and start application:\n\n```bash\nnpm install -g react-native-cli@2.0.1  # Install only if you don't have react native CLI installed globally already.\ngit clone git@gitlab.dominode.com:Hypatia-Technologies/digital-passport-mobile-app.git\ncd digital-passport-mobile-app\nnpm install\n```\nCreate a folder called `env` in the project root and add the project's environment variables within `env/env.js`\n\n```bash\nnpm start # For development.\n```\n\nDependencies have been installed correctly if you get this after running the above: `Your app is running at...`\n\n### Detach From ExpoKit\n\nIn order to install native dependencies and run the application on an emulator/simulator, you need to detach the application from ExpoKit.\n\n```bash\nnpm run expo -- login # Use Dominode Expo account login credentials.\nnpm run expo -- eject\nbrew install git-lfs # Homebrew should already be installed.\ngit lfs install\nreact-native link blinkid-react-native\nreact-native link react-native-touch-id\n```\n\nWhen prompted, select: `ExpoKit: I'll create or log in with an Expo account to use React Native and the Expo SDK.`\n\n\n## Setup For iOS Development\n\n1. Open `digital-passport-mobile-app/ios` in xcode and select `Hypatia Technologies INC` as team within the project's general settings.\n\n2. Add faceID permissions into `info.plist`:\n```\n<key>NSFaceIDUsageDescription</key>\n<string>Enabling Face ID allows you quick and secure access to your account.</string>\n```\n\n3. Run the commands below in a terminal to install the application on an iOS simulator:\n\n```bash\ncd ios # From project root.\npod install\ncd ..\nreact-native run-ios\n```\n\n### Deployment using fastlane\n\n1. Install fastlane (if not already installed): \n\n```bash\nxcode-select --install\n\n# Using RubyGems\nsudo gem install fastlane -NV\n\n# Alternatively using Homebrew\nbrew cask install fastlane\n\nfastlane init # Run within `digital-passport-mobile-app/ios`\n```\n\n2. \na. Replace the files within `digital-passport-mobile-app/ios/fastlane` with those within `digital-passport-mobile-app/samples/fastlane`. Also, replace values where necessary within `Appfile`.\nb. Goto the testflight section of [appstoreconnect](https://appstoreconnect.apple.com/) and note the latest version and build number.\nc. Setup automating version and build number by going [here](https://developer.apple.com/library/archive/qa/qa1827/_index.html/) and following steps 1 and 2 within the Xcode subheading.\n\n3. Run the command below to deploy a beta build:\n\n```\nfastlane beta\n```\n\n4. Follow the steps to release the app on testflight:\na. Goto the testflight section of [appstoreconnect](https://appstoreconnect.apple.com/).\nb. Navigate to iOS Builds > deployed version (build number).\nc. click `Provide Export Compliance Information` > select `No` > click `Start Internal Testing`.\n\n\n## Setup For Android Development\n\n1. Add microblink maven repository to `digital-passport-mobile-app/android/app/build.gradle`: \n```\nallprojects {\n  repositories {\n    // don't forget to add maven and jcenter if not there already\n    mavenLocal()\n    jcenter()\n    \n    // ... other repositories your project needs\n    \n    maven { url \"http://maven.microblink.com\" }\n  }\n}\n```\n\n2. Replace the keyword `compile` with `implementation` in files `digital-passport-mobile-app/android/app/build.gradle`,  `digital-passport-mobile-app/node_modules/blinkid-react-native/src/android/build.gradle` and `digital-passport-mobile-app/node_modules/react-native-touch-id/android/build.gradle`\n\n3. Add biometrics permissions into `AndroidManifest.xml`:\n```\n<uses-permission android:name=\"android.permission.USE_FINGERPRINT\" />\n```\n\n4. Within `digital-passport-mobile-app/node_modules/blinkid-react-native/src/android/build.gradle`, replace:\n```\nimplementation \"com.facebook.react:react-native:(versionNumber)\"\n```\nwith\n```\nimplementation \"com.facebook.react:react-native:+\"\n```\n\n5. Open `digital-passport-mobile-app/android` in a android studio and allow the `gradle sync` process run to completion.\n\n6 Run the following\n\n```bash\nreact-native run-android # From project root.\n```\n",
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"main\": \"node_modules/expo/AppEntry.js\",\n  \"watch\": {\n    \"docs\": \"{src/assets,components/common}/**/*.*\"\n  },\n  \"scripts\": {\n    \"watch\": \"npm-watch docs\",\n    \"start\": \"npm-run-all --parallel watch lint-test start-dev\",\n    \"android\": \"npm-run-all --parallel watch lint-test android-dev\",\n    \"ios\": \"npm-run-all --parallel watch lint-test ios-dev\",\n    \"start-dev\": \"node ./node_modules/.bin/expo start\",\n    \"android-dev\": \"node ./node_modules/.bin/expo start --android\",\n    \"ios-dev\": \"node ./node_modules/.bin/expo start --ios\",\n    \"test\": \"node ./node_modules/.bin/jest --watchAll\",\n    \"docs\": \"./node_modules/.bin/esdoc\",\n    \"lint\": \"node_modules/.bin/esw\",\n    \"lint-watch\": \"node_modules/.bin/esw --watch\",\n    \"lint-test\": \"npm-run-all --parallel lint-watch test\",\n    \"publish\": \"node ./node_modules/.bin/expo publish\",\n    \"eject\": \"node ./node_modules/.bin/expo eject\"\n  },\n  \"jest\": {\n    \"preset\": \"jest-expo\",\n    \"collectCoverage\": true,\n    \"coverageReporters\": [\n      \"json\",\n      \"html\"\n    ],\n    \"testMatch\": [\n      \"**/tests/**/*.js\"\n    ],\n    \"transform\": {\n      \"\\\\.js$\": \"./node_modules/react-native/jest/preprocessor.js\"\n    },\n    \"snapshotSerializers\": [\n      \"./node_modules/enzyme-to-json/serializer\"\n    ],\n    \"setupTestFrameworkScriptFile\": \"./node_modules/jest-enzyme/lib/index.js\",\n    \"setupFiles\": [\n      \"enzyme-react-16-adapter-setup\",\n      \"react-native/Libraries/Animated/src/bezier\"\n    ]\n  },\n  \"dependencies\": {\n    \"@expo/vector-icons\": \"^10.0.1\",\n    \"axios\": \"^0.18.0\",\n    \"expo\": \"^32.0.0\",\n    \"mobx\": \"^5.9.4\",\n    \"mobx-react\": \"^5.4.3\",\n    \"react\": \"16.5.0\",\n    \"react-native\": \"https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz\",\n    \"react-native-material-textfield\": \"^0.12.0\",\n    \"react-native-svg-animated-linear-gradient\": \"^0.1.9\",\n    \"react-navigation\": \"^3.6.1\"\n  },\n  \"devDependencies\": {\n    \"@types/react\": \"^16.8.13\",\n    \"babel-eslint\": \"^10.0.1\",\n    \"babel-preset-expo\": \"^5.0.0\",\n    \"enzyme\": \"^3.9.0\",\n    \"enzyme-adapter-react-16\": \"^1.12.1\",\n    \"enzyme-react-16-adapter-setup\": \"^0.1.0\",\n    \"enzyme-to-json\": \"^3.3.5\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-custom-theme\": \"^1.4.2\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.16.0\",\n    \"eslint-config-airbnb\": \"^17.1.0\",\n    \"eslint-plugin-import\": \"^2.16.0\",\n    \"eslint-plugin-jsx-a11y\": \"^6.2.1\",\n    \"eslint-plugin-react\": \"^7.12.4\",\n    \"eslint-watch\": \"^5.0.1\",\n    \"jest-enzyme\": \"^7.0.2\",\n    \"jest-expo\": \"^32.0.0\",\n    \"npm-run-all\": \"^4.1.5\",\n    \"npm-watch\": \"^0.6.0\",\n    \"react-dom\": \"^16.8.6\",\n    \"react-test-renderer\": \"^16.8.6\"\n  },\n  \"private\": true\n}\n",
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "__docId__": 121,
+    "kind": "testFile",
+    "name": "tests/stores/one.js",
+    "content": "import React from 'react';\nimport { shallow } from 'enzyme';\nimport App from '../../App';\n\ndescribe('Root', () => {\n  it('should render correctly', async () => {\n    const tree = shallow(\n      <App />,\n    );\n    expect(tree).toMatchSnapshot();\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/ekpodavid/Programming/Web/Ezetradein/test/ezetradein/tests/stores/one.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 122,
+    "kind": "test",
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "tests/stores/one.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/stores/one.js~describe0",
+    "access": null,
+    "description": "Root",
+    "lineNumber": 5
+  },
+  {
+    "__docId__": 123,
+    "kind": "test",
+    "name": "it1",
+    "testId": 1,
+    "memberof": "tests/stores/one.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/stores/one.js~describe0.it1",
+    "access": null,
+    "description": "should render correctly",
+    "lineNumber": 6
+  }
+]
