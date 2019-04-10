@@ -2,6 +2,26 @@
 
 ## Current functionality
 
+1. List of restaurant.
+* Load a list of restaurant.
+* Search for restaurants based on location.
+* Click to view individaul restaurant.
+* Inifinite scroll.
+
+2. Individaul restaurant.
+* View an individaul restaurant.
+* Functional Map view (google maps)
+* Click to call.
+* Click to visit website.
+* Click for map directions
+
+## Stack
+* React-native with Expo SDK
+* MobX
+* Axios
+* Eslint
+* Esdoc (full app wide documentation within 'documentation folder).
+* Jest (tests unavailable due to config/dependency issues).
 
 ## Genral Setup For Development
 
